@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#page {
+  display: table;
+  height: 100%;
+}
+
+#main {
+  display: table-row;
+  height: 1px;
+}
+
+#main.push {
+  height: auto;
+}
+
+#footer {
+  background: blue;
+  display: table-row;
+  height: 1px;
+}
+
+.page-top-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-top-wrapper > div {
+  width: 100%;
+  min-width: 33%;
+  max-width: 50%;
+  float: left;
+}
+
+.region-page-top-first {
+  background: red;
+}
+
+.region-page-top-second {
+  background: yellow;
+}
+
+.region-page-top-third {
+  background: blue;
+}

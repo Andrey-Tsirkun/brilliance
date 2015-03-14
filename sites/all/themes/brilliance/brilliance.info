@@ -1,0 +1,22 @@
+name = Brilliance Drupal Theme
+description = Luxury Theme
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/media.css
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top_first] = Page Top First
+regions[page_top_second] = Page Top Second
+regions[page_top_third] = Page Top Third
+regions[content] = Content
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
+regions[page_bottom] = Page Bottom
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+
+settings[header_state] = default_header
