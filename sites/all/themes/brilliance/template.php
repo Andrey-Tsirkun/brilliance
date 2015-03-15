@@ -16,10 +16,13 @@ function brilliance_preprocess_page(&$variables) {
 
   $page_top_regions_counter = 0;
   foreach ($page_top_regions as $value) {
-    if(!empty($value)) {
-      print $value;
+    if (!empty($value)) {
       $page_top_regions_counter++;
     }
+  }
+
+  if (theme_get_setting('header_state') == 'fixed_header'){
+    $variables['header_class'] = 'fixed';
   }
 
   $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;

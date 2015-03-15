@@ -22,7 +22,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
     '#description' => t('Choose header state.'),
     '#options' => array(
       'default_header' => t('Default header'),
-      'sticky_header' => t('Sticky header'),
+      'fixed_header' => t('Fixed header'),
     ),
     '#default_value' => theme_get_setting('default_header'),
   );

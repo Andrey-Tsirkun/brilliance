@@ -8,6 +8,16 @@ html, body {
   height: 100%;
 }
 
+.header {
+  background: palevioletred;
+}
+
+.header.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 #main {
   display: table-row;
   height: 1px;
@@ -18,31 +28,41 @@ html, body {
 }
 
 #footer {
-  background: blue;
+  background: teal;
   display: table-row;
   height: 1px;
 }
 
 .page-top-wrapper {
   width: 100%;
-  overflow: hidden;
+  display: table;
 }
 
 .page-top-wrapper > div {
+  display: table-cell;
+  padding: 10px;
+}
+
+.page-top-1 > div {
   width: 100%;
-  min-width: 33%;
-  max-width: 50%;
-  float: left;
+}
+
+.page-top-2 > div {
+  width: 50%;
+}
+
+.page-top-3 > div {
+  width: 33%;
 }
 
 .region-page-top-first {
-  background: red;
+  background: #d3d3d3;
 }
 
 .region-page-top-second {
-  background: yellow;
+  background: indianred;
 }
 
 .region-page-top-third {
-  background: blue;
+  background: olivedrab;
 }
