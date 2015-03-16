@@ -10,7 +10,7 @@
 
   <div id="page">
 
-    <header class="header <?php print $header_class; ?>"><div class="section clearfix">
+    <header class="header"><div class="section clearfix">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -51,10 +51,11 @@
       <?php print $messages; ?>
 
       <?php if ($main_menu || $secondary_menu): ?>
-        <div id="navigation"><div class="section">
-          <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('id' => 'main-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Main menu'))); ?>
-          <?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary-menu', 'class' => array('links', 'inline', 'clearfix')), 'heading' => t('Secondary menu'))); ?>
-        </div></div> <!-- /.section, /#navigation -->
+        <nav class="navigation <?php print $nav_class; ?>"><div class="section">
+          <?php if ($page['navigation']): ?>
+            <?php print render($page['navigation']); ?>
+          <?php endif; ?>
+        </div></nav> <!-- /.section, /#navigation -->
       <?php endif; ?>
 
       <div id="content" class="column"><div class="section">
