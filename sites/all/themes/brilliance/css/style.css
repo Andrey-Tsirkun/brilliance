@@ -66,3 +66,12 @@ html, body {
 .region-page-top-third {
   background: olivedrab;
 }
+
+.navigation li {
+  display: inline-block;
+  float: left;
+}
+
+.navigation li a {
+  text-decoration: none;
+}

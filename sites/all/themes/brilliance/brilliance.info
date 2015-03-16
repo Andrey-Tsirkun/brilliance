@@ -6,9 +6,11 @@ core = 7.x
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
+scripts[] = js/brilliance.js
 
 regions[header] = Header
 regions[help] = Help
+regions[navigation] = Navigation
 regions[page_top_first] = Page Top First
 regions[page_top_second] = Page Top Second
 regions[page_top_third] = Page Top Third
@@ -19,4 +21,4 @@ regions[page_bottom] = Page Bottom
 regions[footer] = Footer
 regions[highlighted] = Highlighted
 
-settings[header_state] = default_header
+settings[menu_state] = default_header

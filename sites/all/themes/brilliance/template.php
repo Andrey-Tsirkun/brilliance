@@ -21,9 +21,11 @@ function brilliance_preprocess_page(&$variables) {
     }
   }
 
-  if (theme_get_setting('header_state') == 'fixed_header'){
-    $variables['header_class'] = 'fixed';
+  $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;
+
+  if (theme_get_setting('menu_state') == 'fixed_menu'){
+    $variables['nav_class'] = 'fixed';
   }
 
-  $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;
+  drupal_add_js(array('myModule' => array('key' => 'value')), 'setting');
 }

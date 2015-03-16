@@ -16,14 +16,14 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsible' => FALSE,
     '#collapsed' => FALSE,
   );
-  $form['brilliance_settings']['header_state'] = array(
+  $form['brilliance_settings']['menu_state'] = array(
     '#type' => 'radios',
-    '#title' => t('Header state'),
-    '#description' => t('Choose header state.'),
+    '#title' => t('Menu state'),
+    '#description' => t('Choose menu state.'),
     '#options' => array(
-      'default_header' => t('Default header'),
-      'fixed_header' => t('Fixed header'),
+      'default_menu' => t('Default menu'),
+      'fixed_menu' => t('Fixed menu'),
     ),
-    '#default_value' => theme_get_setting('default_header'),
+    '#default_value' => theme_get_setting('default_menu'),
   );
 }
