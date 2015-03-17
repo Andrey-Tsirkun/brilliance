@@ -1,17 +1,12 @@
-/**
- * Created by Banzai on 16.03.2015.
- */
-jQuery(document).ready(function($) {
-  $(function(){
-    var stickyRibbonTop = $('.navigation.fixed').offset().top;
-
-    $(window).scroll(function(){
-      if( $(window).scrollTop() > stickyRibbonTop ) {
-        $('.navigation.fixed').css({position: 'fixed', top: '0px'});
-      } else {
-        $('.navigation.fixed').css({position: 'static', top: '0px'});
-      }
-    });
-  });
-
-});
+(function ($) {
+    if (Drupal.settings.navFixed) {
+      var stickyRibbonTop = $('.navigation').offset().top;
+      $(window).scroll(function(){
+        if( $(window).scrollTop() > stickyRibbonTop ) {
+          $('.navigation').css({position: 'fixed', top: '0px'});
+        } else {
+          $('.navigation').css({position: 'static', top: '0px'});
+        }
+      });
+    }
+})(jQuery);

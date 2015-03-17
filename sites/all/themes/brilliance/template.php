@@ -24,8 +24,9 @@ function brilliance_preprocess_page(&$variables) {
   $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;
 
   if (theme_get_setting('menu_state') == 'fixed_menu'){
-    $variables['nav_class'] = 'fixed';
+    //print 'PADLA';
+    drupal_add_js(array('navFixed' => TRUE), 'setting');
   }
 
-  drupal_add_js(array('myModule' => array('key' => 'value')), 'setting');
+  drupal_add_js(drupal_get_path('theme', 'brilliance') .'/js/brilliance.js', array('scope' => 'footer'));
 }
