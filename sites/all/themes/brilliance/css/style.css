@@ -67,6 +67,18 @@ html, body {
   background: olivedrab;
 }
 
+ul.menu {
+  margin: 0;
+}
+
+.navigation {
+  width: 100%;
+  max-width: 1140px;
+  overflow: hidden;
+  z-index: 1;
+  background: lightgreen;
+}
+
 .navigation li {
   display: inline-block;
   float: left;
@@ -74,4 +86,8 @@ html, body {
 
 .navigation li a {
   text-decoration: none;
+}
+
+#content {
+  clear: both;
 }
