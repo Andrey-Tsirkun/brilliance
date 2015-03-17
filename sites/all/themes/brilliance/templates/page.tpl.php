@@ -50,11 +50,9 @@
 
       <?php print $messages; ?>
 
-      <?php if ($main_menu || $secondary_menu): ?>
-        <nav class="navigation <?php print $nav_class; ?>"><div class="section">
-          <?php if ($page['navigation']): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
+      <?php if ($page['navigation']): ?>
+        <nav class="navigation"><div class="section">
+          <?php print render($page['navigation']); ?>
         </div></nav> <!-- /.section, /#navigation -->
       <?php endif; ?>
 

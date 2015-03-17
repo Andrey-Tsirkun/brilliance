@@ -24,6 +24,6 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       'default_menu' => t('Default menu'),
       'fixed_menu' => t('Fixed menu'),
     ),
-    '#default_value' => theme_get_setting('default_menu'),
+    '#default_value' => theme_get_setting('menu_state','brilliance'),
   );
 }
