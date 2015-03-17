@@ -6,6 +6,7 @@ core = 7.x
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/media.css
+stylesheets[all][] = css/reset.css
 
 regions[header] = Header
 regions[help] = Help
