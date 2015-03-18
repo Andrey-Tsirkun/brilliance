@@ -33,12 +33,14 @@ html, body {
   height: 1px;
 }
 
-.page-top-wrapper {
+.page-top-wrapper,
+.center-wrapper {
   width: 100%;
   display: table;
 }
 
-.page-top-wrapper > div {
+.page-top-wrapper .region,
+.center-wrapper .region {
   display: table-cell;
   padding: 10px;
 }
@@ -67,6 +69,16 @@ html, body {
   background: olivedrab;
 }
 
+.region-sidebar-left {
+  width: 25%;
+  background: #f4ea71;
+}
+
+.region-sidebar-right {
+  width: 25%;
+  background: #aaccee;
+}
+
 ul.menu {
   margin: 0;
 }
@@ -90,4 +102,10 @@ ul.menu {
 
 #content {
   clear: both;
+}
+
+/*---Typography---*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }

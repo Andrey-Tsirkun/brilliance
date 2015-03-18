@@ -80,8 +80,19 @@
         <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
         <?php print render($page['help']); ?>
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-        <?php print render($page['content']); ?>
-        <?php print $feed_icons; ?>
+
+        <div class="center-wrapper">
+          <?php if ($page['sidebar_left']): ?>
+            <?php print render($page['sidebar_left']); ?>
+          <?php endif; ?>
+
+          <?php print render($page['content']); ?>
+
+          <?php if ($page['sidebar_right']): ?>
+            <?php print render($page['sidebar_right']); ?>
+          <?php endif; ?>
+        </div>
+
       </div></div> <!-- /.section, /#content -->
     </main> <!-- /#main -->
 
