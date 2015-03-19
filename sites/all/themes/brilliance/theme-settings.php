@@ -17,13 +17,15 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
     '#collapsed' => FALSE,
   );
   $form['brilliance_settings']['menu_state'] = array(
-    '#type' => 'radios',
+    '#type' => 'checkbox',
     '#title' => t('Menu state'),
-    '#description' => t('Choose menu state.'),
-    '#options' => array(
-      'default_menu' => t('Default menu'),
-      'fixed_menu' => t('Fixed menu'),
-    ),
-    '#default_value' => theme_get_setting('menu_state','brilliance'),
+    '#description' => t('Enable fixed menu.'),
+    '#default_value' => (theme_get_setting('menu_state', 'brilliance')),
+  );
+  $form['brilliance_settings']['brilliance_slider'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Brilliance Slider'),
+    '#description' => t('Enable Brilliance Slider'),
+    '#default_value' => (theme_get_setting('brilliance_slider', 'brilliance')),
   );
 }
