@@ -21,4 +21,5 @@ regions[page_bottom] = Page Bottom
 regions[footer] = Footer
 regions[highlighted] = Highlighted
 
-settings[menu_state] = default_menu
+settings[menu_state] = FALSE
+settings[brilliance_slider] = FALSE

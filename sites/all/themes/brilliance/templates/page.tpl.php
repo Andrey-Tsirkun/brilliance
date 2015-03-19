@@ -58,6 +58,10 @@
 
       <div id="content" class="column"><div class="section">
 
+        <?php if ($brilliance_slider): ?>
+          <div>OLOLO</div>
+        <?php endif; ?>
+
         <div class="page-top-wrapper <?php print $page_top_regions_class; ?>">
           <?php if ($page['page_top_first']): ?>
             <?php print render($page['page_top_first']); ?>

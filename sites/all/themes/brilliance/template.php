@@ -23,9 +23,11 @@ function brilliance_preprocess_page(&$variables) {
 
   $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;
 
-  if (theme_get_setting('menu_state') == 'fixed_menu'){
-    //print 'PADLA';
+  if (theme_get_setting('menu_state')) {
     drupal_add_js(array('navFixed' => TRUE), 'setting');
+  }
+  if (theme_get_setting('brilliance_slider')) {
+    $variables['brilliance_slider'] = TRUE;
   }
 
   drupal_add_js(drupal_get_path('theme', 'brilliance') .'/js/brilliance.js', array('scope' => 'footer'));
