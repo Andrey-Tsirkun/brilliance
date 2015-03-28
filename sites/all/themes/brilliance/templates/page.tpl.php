@@ -59,7 +59,15 @@
       <div id="content" class="column"><div class="section">
 
         <?php if ($brilliance_slider): ?>
-          <div>OLOLO</div>
+          <div class="brilliance-slider">
+            <ul>
+              <li><img src="sites/all/themes/brilliance/img/1.png"></li>
+              <li><img src="sites/all/themes/brilliance/img/2.png"></li>
+              <li><img src="sites/all/themes/brilliance/img/3.png"></li>
+            </ul>
+            <div class="prevButton sliderButton"></div>
+            <div class="nextButton sliderButton"></div>
+          </div>
         <?php endif; ?>
 
         <div class="page-top-wrapper <?php print $page_top_regions_class; ?>">

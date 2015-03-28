@@ -109,3 +109,64 @@ ul.menu {
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/*---Brilliance Slider---*/
+.brilliance-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1140px;
+  max-height: 768px;
+}
+
+.brilliance-slider li {
+  list-style: none;
+  float: left;
+  display: inline-block;
+}
+
+.brilliance-slider ul {
+  display: block;
+  height: auto;
+  position: relative;
+  width: 3420px;
+}
+
+.brilliance-slider img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.sliderButton {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  margin-top: -32px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.prevButton {
+  left: -30px;
+  background: url("../img/slider_prev.png");
+  transition: left 1s, opacity 1s;
+}
+
+.nextButton {
+  right: -30px;
+  background: url("../img/slider_next.png");
+  transition: right 1s, opacity 1s;
+}
+
+.brilliance-slider:hover .prevButton {
+  left: 30px;
+  opacity: 1;
+}
+
+.brilliance-slider:hover .nextButton {
+  right: 30px;
+  opacity: 1;
+}
