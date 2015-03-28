@@ -9,4 +9,6 @@
         }
       });
     }
+
+  $('.brilliance-slider').brillianceSlider();
 })(jQuery);
