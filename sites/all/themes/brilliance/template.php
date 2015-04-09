@@ -2,13 +2,12 @@
 
 function brilliance_preprocess_region(&$variables) {
   $region_list = system_region_list('brilliance');
-  //dsm($region_list);
-  //dsm($variables);
 }
 
 function brilliance_preprocess_page(&$variables) {
   /** @var TYPE_NAME $variables */
-  $page_top_regions = array(
+
+  /*$page_top_regions = array(
     $variables['page']['page_top_first'],
     $variables['page']['page_top_second'],
     $variables['page']['page_top_third']
@@ -23,6 +22,23 @@ function brilliance_preprocess_page(&$variables) {
 
   $variables['page_top_regions_class'] = 'page-top-' . $page_top_regions_counter;
 
+  $page_bottom_regions = array(
+    $variables['page']['page_bottom_first'],
+    $variables['page']['page_bottom_second'],
+    $variables['page']['page_bottom_third'],
+    $variables['page']['page_bottom_third']
+  );
+
+  $page_bottom_regions_counter = 0;
+  foreach ($page_bottom_regions as $value) {
+    if (!empty($value)) {
+      $page_bottom_regions_counter++;
+    }
+  }
+
+  $variables['page_bottom_regions_class'] = 'page-bottom-' . $page_bottom_regions_counter;*/
+
+
   if (theme_get_setting('menu_state')) {
     drupal_add_js(array('navFixed' => TRUE), 'setting');
   }
@@ -31,4 +47,15 @@ function brilliance_preprocess_page(&$variables) {
   }
 
   drupal_add_js(drupal_get_path('theme', 'brilliance') .'/js/brilliance.js', array('scope' => 'footer'));
+}
+
+function brilliance_preprocess_html(&$vars) {
+  $viewport = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport',
+      'content' => 'width=device-width, initial-scale=1, maximum-scale=1',
+    ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
 }
