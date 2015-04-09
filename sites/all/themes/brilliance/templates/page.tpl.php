@@ -70,7 +70,7 @@
           </div>
         <?php endif; ?>
 
-        <div class="page-top-wrapper <?php print $page_top_regions_class; ?>">
+        <div class="page-top-wrapper <?php /*print $page_top_regions_class;*/ ?>">
           <?php if ($page['page_top_first']): ?>
             <?php print render($page['page_top_first']); ?>
           <?php endif; ?>
@@ -105,11 +105,35 @@
           <?php endif; ?>
         </div>
 
+        <div class="page-bottom-wrapper <?php  /*print $page_bottom_regions_class;*/ ?>">
+          <?php if ($page['page_bottom_first']): ?>
+            <?php print render($page['page_bottom_first']); ?>
+          <?php endif; ?>
+
+          <?php if ($page['page_bottom_second']): ?>
+            <?php print render($page['page_bottom_second']); ?>
+          <?php endif; ?>
+
+          <?php if ($page['page_bottom_third']): ?>
+            <?php print render($page['page_bottom_third']); ?>
+          <?php endif; ?>
+
+          <?php if ($page['page_bottom_fourth']): ?>
+            <?php print render($page['page_bottom_fourth']); ?>
+          <?php endif; ?>
+        </div>
+
       </div></div> <!-- /.section, /#content -->
     </main> <!-- /#main -->
 
     <footer id="footer"><div class="section">
-      <?php print render($page['footer']); ?>
+        <?php if ($page['footer_first']): ?>
+          <?php print render($page['footer_first']); ?>
+        <?php endif; ?>
+
+        <?php if ($page['footer_second']): ?>
+          <?php print render($page['footer_second']); ?>
+        <?php endif; ?>
     </footer></div> <!-- /.section, /#footer -->
 
   </div> <!-- /#page-wrapper -->

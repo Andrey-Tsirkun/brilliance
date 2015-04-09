@@ -18,9 +18,14 @@ regions[page_top_third] = Page Top Third
 regions[content] = Content
 regions[sidebar_left] = Left sidebar
 regions[sidebar_right] = Right sidebar
-regions[page_bottom] = Page Bottom
-regions[footer] = Footer
+regions[page_bottom_first] = Page Bottom First
+regions[page_bottom_second] = Page Bottom Second
+regions[page_bottom_third] = Page Bottom Third
+regions[page_bottom_fourth] = Page Bottom Fourth
+regions[footer_first] = Footer First
+regions[footer_second] = Footer Second
 regions[highlighted] = Highlighted
 
 settings[menu_state] = FALSE
 settings[brilliance_slider] = FALSE
+settings[slider_upload] = FALSE
