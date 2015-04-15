@@ -1,0 +1,59 @@
+@media only screen
+and (min-width : 768px) {
+  .region-sidebar-left {
+    width: 25%;
+  }
+
+  .region-sidebar-right {
+    width: 25%;
+  }
+
+  .page-top-wrapper,
+  .center-wrapper,
+  .page-bottom-wrapper {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+  }
+
+  .page-top-wrapper .region,
+  .center-wrapper .region,
+  .page-bottom-wrapper .region {
+    display: table-cell;
+  }
+
+  footer .section {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  footer .region {
+    display: table-cell;
+  }
+}
+
+@media only screen
+and (min-width : 1025px) {
+  #page {
+    display: table;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    table-layout: fixed;
+  }
+
+  #main {
+    display: table-row;
+  }
+
+  #footer {
+    display: table-row;
+    height: 1px;
+  }
+
+  .header.fixed {
+    max-width: 1140px;
+  }
+}
