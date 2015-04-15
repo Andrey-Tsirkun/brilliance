@@ -5,8 +5,6 @@ version = VERSION
 core = 7.x
 
 stylesheets[all][] = css/style.css
-stylesheets[all][] = css/media.css
-stylesheets[all][] = css/reset.css
 scripts[] = js/jquery.brillianceSlider.js
 
 regions[header] = Header
