@@ -7,7 +7,6 @@
         nextButton = $('.nextButton');
 
     var make = function () {
-      console.log(sliderItemWidth);
       sliderWrap.width(sliderItem.size() * sliderItemWidth + 'px');
       $('.brilliance-slider li:last-child').after($('.brilliance-slider li:first-child'));
       sliderWrap.css({'left': -sliderItemWidth + 'px'});
