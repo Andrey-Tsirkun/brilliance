@@ -10,7 +10,7 @@
 
   <div id="page">
 
-    <header class="header"><div class="section clearfix">
+    <header class="header" role="banner"><div class="section clearfix">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -51,7 +51,7 @@
       <?php print $messages; ?>
 
       <?php if ($page['navigation']): ?>
-        <nav class="navigation"><div class="section">
+        <nav class="navigation" role="navigation"><div class="section">
           <?php print render($page['navigation']); ?>
         </div></nav> <!-- /.section, /#navigation -->
       <?php endif; ?>
@@ -98,7 +98,11 @@
             <?php print render($page['sidebar_left']); ?>
           <?php endif; ?>
 
-          <?php print render($page['content']); ?>
+          <?php if ($page['content']): ?>
+            <main role="main">
+              <?php print render($page['content']); ?>
+            </main>
+          <?php endif; ?>
 
           <?php if ($page['sidebar_right']): ?>
             <?php print render($page['sidebar_right']); ?>
@@ -126,7 +130,7 @@
       </div></div> <!-- /.section, /#content -->
     </main> <!-- /#main -->
 
-    <footer id="footer"><div class="section">
+    <footer id="footer" role="contentinfo"><div class="section">
         <?php if ($page['footer_first']): ?>
           <?php print render($page['footer_first']); ?>
         <?php endif; ?>
