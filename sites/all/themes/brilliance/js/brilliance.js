@@ -10,15 +10,34 @@
       });
     }
 
-  if ($(window).width() <= 767) {
-    console.log(1);
-    $('.expanded a').click(function() {
-      $(this).siblings('ul').slideToggle(200);
-    });
+  var menuLink = $('.expanded > a'),
+      menuInnerList = menuLink.siblings('ul');
+
+  //Remove click event for elements with dropdown children
+  menuLink.click(false);
+
+  function menuBehaviour () {
+    if ($(window).width() <= 767) {
+      menuLink.click(function() {
+        $(this).toggleClass('activeUl');
+        $(this).unbind('mouseenter mouseleave');
+        $(this).siblings('ul').slideToggle(200);
+      });
+    }
+    if ($(window).width() > 768) {
+      menuInnerList.hover(function() {
+        $(this).siblings('a').toggleClass('activeUl');
+      });
+    }
   }
+
+  menuBehaviour();
+
+  $(window).resize(function() {
+    menuBehaviour();
+  });
+
 
   $('.brilliance-slider').brillianceSlider();
 
-  //Remove click event for elements with dropdown children
-  $('.expanded > a').click(false);
 })(jQuery);

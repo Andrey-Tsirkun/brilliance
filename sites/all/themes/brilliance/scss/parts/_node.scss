@@ -1,0 +1,17 @@
+.submitted {
+  margin-bottom: 10px;
+
+  span {
+    font: italic 12px normal $defaultFontFamily;
+  }
+
+  a {
+    font-style: normal;
+    border-bottom: 1px solid transparent;
+    text-transform: capitalize;
+
+    &:hover {
+      border-bottom: 1px $linkColor dotted;
+    }
+  }
+}

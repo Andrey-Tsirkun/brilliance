@@ -1,16 +1,6 @@
 $bpTablet: 768px;
 $bpDesktop: 1025px;
 
-.navigation {
-  ul {
-    li {
-      ul {
-        display: none;
-      }
-    }
-  }
-}
-
 @include breakpoint ($bpTablet) {
   .region-sidebar-left, .region-sidebar-right {
     width: 25%;
@@ -39,77 +29,6 @@ $bpDesktop: 1025px;
       position: fixed;
       width: 100%;
       z-index: 1;
-    }
-  }
-
-  .navigation {
-    width: 100%;
-    max-width: 1140px;
-
-    ul {
-      li {
-        position: relative;
-        display: inline-block;
-
-        ul {
-          position: absolute;
-          top: 32px;
-          left: 0;
-          display: none;
-          opacity: 0;
-          visibility: hidden;
-          z-index: 1;
-        }
-
-        &:hover {
-
-          ul {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-
-            ul {
-              display: none;
-              opacity: 0;
-              visibility: hidden;
-              @include transition(opacity 0.3s);
-            }
-          }
-        }
-
-        &:hover {
-
-          ul {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-
-            ul {
-              display: none;
-              opacity: 0;
-              visibility: hidden;
-              @include transition(opacity 0.3s);
-            }
-          }
-        }
-      }
-
-      ul {
-        ul {
-          left: 100%;
-          top: 0;
-        }
-
-        .expanded {
-          &:hover {
-            ul {
-              display: block;
-              opacity: 1;
-              visibility: visible;
-            }
-          }
-        }
-      }
     }
   }
 }
