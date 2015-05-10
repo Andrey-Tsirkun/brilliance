@@ -59,3 +59,20 @@ function brilliance_preprocess_html(&$vars) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+/**
+ * Process variables for comment.tpl.php.
+ *
+ * @see comment.tpl.php
+ */
+function brilliance_preprocess_comment(&$variables) {
+  $comment = $variables['elements']['#comment'];
+  $uri = entity_uri('comment', $comment);
+  $variables['permalink'] = l(t('#'), $uri['path'], $uri['options']);
+  $variables['author'] = t('Author') . ': ' . $variables['author'];
+
+  //Add class to comment if it have user picture.
+  if ($variables['picture']) {
+    $variables['classes_array'][] = 'withavatar';
+  }
+}
