@@ -38,6 +38,14 @@ function brilliance_preprocess_page(&$variables) {
 
   $variables['page_bottom_regions_class'] = 'page-bottom-' . $page_bottom_regions_counter;*/
 
+  global $user;
+  if (!$user->uid) {
+    drupal_add_library('system', 'ui.dialog');
+    drupal_add_library('system', 'effects.explode');
+    drupal_add_library('system', 'effects.puff');
+    drupal_add_library('system', 'effects.fade');
+    $variables['login_button'] = l(t('Login'), 'user', array('attributes' => array('class' => array('user-login'))));
+  }
 
   if (theme_get_setting('menu_state')) {
     drupal_add_js(array('navFixed' => TRUE), 'setting');
