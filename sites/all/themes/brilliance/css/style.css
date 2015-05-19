@@ -362,7 +362,7 @@ label {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000035}}
 .navigation {
   position: static;
-  top: 0px;
+  top: 0;
   border-bottom: solid 4px orange;
   z-index: 2;
 }
