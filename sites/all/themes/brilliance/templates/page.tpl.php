@@ -40,6 +40,10 @@
 
       <?php print render($page['header']); ?>
 
+      <?php if (isset($login_button)): ?>
+        <?php print $login_button; ?>
+      <?php endif; ?>
+
     </div></header> <!-- /.section, /#header -->
 
     <main id="main" class="clearfix push">

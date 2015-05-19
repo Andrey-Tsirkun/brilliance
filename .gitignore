@@ -6,3 +6,8 @@ sites/*/files
 sites/*/private
 .idea/*
 .idea
+sites/all/themes/brilliance/.sass-cache
+sites/all/themes/brilliance/.sass-cache/*
+#Ignore SASS/Compass cache files
+.sass-cache
+*.css.map
