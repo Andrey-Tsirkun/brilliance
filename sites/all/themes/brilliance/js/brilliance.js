@@ -43,26 +43,29 @@
     attach:function (context, settings) {
 
       // Здесь указываем ID блока с логином.
-      var $login_block = $('#block-user-login');
-      if ($login_block.length > 0) {
+      var $loginBlock = $('#block-user-login');
+      if ($loginBlock.length > 0) {
 
         // Далее при загрузке страницы
         // блок переместится в попап, но не покажется.
-        $login_block.dialog({
+        $loginBlock.dialog({
           autoOpen: false,
-          title: Drupal.t('Login'),
           resizable: false,
           modal: true,
-
-          // Новые эффекты.
+          dialogClass: 'ui-login',
           show: 'fade',
-          hide: 'puff',
-          speed: 50
+          hide: 'fade',
+          speed: 50,
+          open: function(){
+            $('.ui-widget-overlay').bind('click',function(){
+              $loginBlock.dialog('close');
+            })
+          }
         });
 
         // По клику на ссылку логина - показываем попап.
         $('.user-login', context).click(function() {
-          $login_block.dialog('open');
+          $loginBlock.dialog('open');
           return false;
         });
       }

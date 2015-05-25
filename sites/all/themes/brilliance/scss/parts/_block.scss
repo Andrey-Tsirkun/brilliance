@@ -1,0 +1,54 @@
+.ui-login {
+  padding: 0;
+  background: none;
+  border: none;
+  overflow: visible;
+
+  .block-user {
+    clear: both;
+    padding: 0;
+  }
+
+  .ui-widget-header {
+    background: none;
+
+    .ui-icon {
+      width: 34px;
+      height: 34px;
+      @include icons-sprite(close_gray);
+    }
+  }
+
+  .ui-dialog-title {
+    display: none;
+  }
+
+  .ui-dialog-titlebar {
+    float: right;
+    width: 34px;
+    height: 34px;
+    bottom: -17px;
+    right: -17px;
+    z-index: 1;
+    border: none;
+    border-radius: 17px;
+  }
+
+  .ui-dialog-titlebar-close {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    right: 0;
+
+    span {
+      margin: 0;
+    }
+
+    &.ui-state-hover {
+      border: none;
+      background: none;
+    }
+  }
+}
