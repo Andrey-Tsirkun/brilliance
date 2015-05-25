@@ -84,3 +84,12 @@ function brilliance_preprocess_comment(&$variables) {
     $variables['classes_array'][] = 'withavatar';
   }
 }
+
+function brilliance_form_user_login_alter( &$form, &$form_state, $form_id ) {
+  $form['name']['#attributes']['placeholder'] = t( 'Username' );
+  $form['pass']['#attributes']['placeholder'] = t( 'Password' );
+}
+
+function brilliance_block_view_user_login_alter (&$data, $block) {
+  unset($data['subject']);
+}

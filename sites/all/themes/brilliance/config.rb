@@ -6,7 +6,10 @@ require 'breakpoint'
 http_path = "/sites/all/themes/brilliance"
 css_dir = "css"
 sass_dir = "scss"
-images_dir = "images"
+images_dir = "img/sprite"
+generated_images_path = "img/sprite"
+http_images_path = http_path + "/" + generated_images_path
+http_generated_images_path = http_images_path
 javascripts_dir = "js"
 fonts_dir = "fonts"
 
