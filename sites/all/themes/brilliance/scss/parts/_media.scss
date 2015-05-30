@@ -10,8 +10,11 @@ $bpDesktop: 1025px;
     display: table;
     table-layout: fixed;
   }
-  .page-top-wrapper .region, .center-wrapper .region, .page-bottom-wrapper .region {
+  .page-top-wrapper .region,
+  .center-wrapper .region,
+  .page-bottom-wrapper .region {
     display: table-cell;
+    vertical-align: top;
   }
   footer {
     .section {
@@ -21,6 +24,7 @@ $bpDesktop: 1025px;
     }
     .region {
       display: table-cell;
+      vertical-align: top;
     }
   }
 
@@ -30,15 +34,17 @@ $bpDesktop: 1025px;
       width: 100%;
       z-index: 1;
     }
+
+    .section {
+      position: relative;
+    }
   }
 }
 
 @include breakpoint ($bpDesktop) {
   #page {
     display: table;
-    max-width: 1140px;
     width: 100%;
-    margin: 0 auto;
     height: 100%;
     table-layout: fixed;
   }
@@ -51,5 +57,10 @@ $bpDesktop: 1025px;
   }
   .header.fixed {
     max-width: 1140px;
+  }
+
+  .centered {
+    max-width: 1140px;
+    margin: 0 auto;
   }
 }

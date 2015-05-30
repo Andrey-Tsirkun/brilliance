@@ -1,0 +1,40 @@
+//first we'll define the folders where the sprites are and their layouts
+//$buttons: sprite-map("sprite/buttons/*.png", $layout: vertical);
+//$buttons2x: sprite-map("sprite/buttons2x/*.png", $layout: vertical);
+
+$icons: sprite-map("sprite/icons/*.png", $layout: vertical);
+$icons2x: sprite-map("sprite/icons2x/*.png", $layout: vertical);
+
+// The general purpose retina sprite mixin.
+//
+//    @include retina-sprite(name, $spritemap1, $spritemap2)
+//    @include retina-sprite(name, $spritemap1, $spritemap2[, $dimensions: true, $pad: 0])
+//
+//    If `dimensions` is true, then width/height will also be set.
+//
+//    if `pad` is non-zero, then that's how much padding the element will have (requires
+//    $spacing on the sprite maps). Great for iPhone interfaces to make hit areas bigger.
+//
+//    See https://gist.github.com/2140082
+@mixin brilliance-sprite($name, $sprites, $sprites2x: false, $dimensions: true, $pad: 0) {
+  @if($dimensions == true) {
+    @include sprite-dimensions($sprites, $name);
+  }
+
+  @if($sprites)  {
+    background-image: sprite-url($sprites);
+    background-position: sprite-position($sprites, $name, -$pad, -$pad);
+    background-repeat: no-repeat;
+  }
+
+  @if($sprites2x) {
+    @media (-webkit-min-device-pixel-ratio: 2.0), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5) {
+      & {
+        $pos: sprite-position($sprites2x, $name, -$pad * 2, -$pad * 2);
+          background-image: sprite-url($sprites2x);
+          background-position: nth($pos, 1)/2 nth($pos, 2)/2;
+          @include background-size(ceil(image-width(sprite-path($sprites2x)) / 2), auto);
+      }
+    }
+  }
+}
