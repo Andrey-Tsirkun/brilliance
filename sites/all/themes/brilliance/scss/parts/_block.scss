@@ -15,7 +15,7 @@
     .ui-icon {
       width: 34px;
       height: 34px;
-      @include icons-sprite(close_gray);
+      @include brilliance-sprite(close_gray, $icons, $icons2x);
     }
   }
 

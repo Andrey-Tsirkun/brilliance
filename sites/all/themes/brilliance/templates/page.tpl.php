@@ -10,16 +10,16 @@
 
   <div id="page">
 
-    <header class="header" role="banner"><div class="section clearfix">
+    <header class="header" role="banner"><div class="section centered clearfix">
 
       <?php if ($logo): ?>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
       <?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
+        <div class="name-and-slogan">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
               <div id="site-name"><strong>
@@ -55,12 +55,12 @@
       <?php print $messages; ?>
 
       <?php if ($page['navigation']): ?>
-        <nav class="navigation" role="navigation"><div class="section">
+        <nav class="navigation" role="navigation"><div class="section centered">
           <?php print render($page['navigation']); ?>
         </div></nav> <!-- /.section, /#navigation -->
       <?php endif; ?>
 
-      <div id="content" class="column"><div class="section">
+      <div id="content" class="column centered"><div class="section">
 
         <?php if ($brilliance_slider): ?>
           <div class="brilliance-slider">
@@ -133,7 +133,7 @@
       </div></div> <!-- /.section, /#content -->
     </main> <!-- /#main -->
 
-    <footer id="footer" role="contentinfo"><div class="section">
+    <footer id="footer" role="contentinfo"><div class="section centered">
         <?php if ($page['footer_first']): ?>
           <?php print render($page['footer_first']); ?>
         <?php endif; ?>

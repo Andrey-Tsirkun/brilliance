@@ -51,6 +51,10 @@ html, body {
   width: 25%;
 }*/
 
+.name-and-slogan {
+  margin-left: 180px;
+}
+
 .region-page-top-first {
   background: #d3d3d3;
 }
@@ -205,11 +209,46 @@ label {
   }
 }*/
 
-.ui-dialog {
+/*.ui-dialog {
   position: fixed;
-}
+}*/
 
 .ui-widget-overlay {
   background: #000;
   opacity: 0.8;
+}
+
+.logo {
+  position: absolute;
+  left: 15px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  //background: darkorange;
+  padding: 15px;
+  text-align: center;
+  background: #ff0800; /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjA4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY4YzAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover,  #ff0800 0%, #ff8c00 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ff0800), color-stop(100%,#ff8c00)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #ff0800 0%,#ff8c00 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#ff8c00',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+  z-index: 2;
+
+
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  img {
+    vertical-align: middle;
+    max-width: 120px;
+    max-height: 120px;
+  }
 }

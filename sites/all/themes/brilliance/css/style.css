@@ -63,19 +63,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/icons\/\*\.png}line{font-family:\0000348}}
-.icons-sprite, .icons-close_gray, .ui-login .ui-widget-header .ui-icon {
-  background-image: url('../img/sprite/icons-sf540b734db.png');
-  background-repeat: no-repeat;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/utilities\/sprites\/_base\.scss}line{font-family:\0000384}}
-.icons-close_gray {
-  background-position: 0 0;
-  height: 34px;
-  width: 34px;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\000035}}
 html, body {
   height: 100%;
@@ -130,72 +117,77 @@ html, body {
   width: 25%;
 }*/
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000354}}
+.name-and-slogan {
+  margin-left: 180px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000358}}
 .region-page-top-first {
   background: #d3d3d3;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000358}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000362}}
 .region-page-top-second {
   background: indianred;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000366}}
 .region-page-top-third {
   background: olivedrab;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000370}}
 .region-sidebar-left {
   background: #f4ea71;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000374}}
 .region-sidebar-right {
   background: #aaccee;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000378}}
 .region-page-bottom-first {
   background: hotpink;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000382}}
 .region-page-bottom-second {
   background: palegreen;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000386}}
 .region-page-bottom-third {
   background: greenyellow;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000390}}
 .region-page-bottom-fourth {
   background: sandybrown;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000390}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000394}}
 ul.menu {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000398}}
 #content {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003102}}
 .region-footer-first {
   background: orangered;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003106}}
 .region-footer-second {
   background: thistle;
 }
 
 /*---Brilliance Slider---*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003108}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003112}}
 .brilliance-slider {
   position: relative;
   overflow: hidden;
@@ -203,27 +195,27 @@ ul.menu {
   max-width: 1140px;
   max-height: 768px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003118}}
 .brilliance-slider li {
   width: auto;
   list-style: none;
   float: left;
   display: inline-block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003124}}
 .brilliance-slider ul {
   display: block;
   height: auto;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003129}}
 .brilliance-slider img {
   display: block;
   height: auto;
   max-width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003136}}
 .sliderButton {
   width: 64px;
   height: 64px;
@@ -235,37 +227,37 @@ ul.menu {
   opacity: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003147}}
 .prevButton {
   left: -30px;
   background: url("../img/slider_prev.png");
   transition: left 1s, opacity 1s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003153}}
 .nextButton {
   right: -30px;
   background: url("../img/slider_next.png");
   transition: right 1s, opacity 1s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003160}}
 .brilliance-slider:hover .prevButton {
   left: 30px;
   opacity: 0.7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003164}}
 .brilliance-slider:hover .nextButton {
   right: 30px;
   opacity: 0.7;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003168}}
 .brilliance-slider:hover .sliderButton:hover {
   opacity: 1;
 }
 
 /*-----Forms-----*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003170}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003174}}
 label {
   font-family: 'RobotoSlab Regular';
 }
@@ -304,15 +296,55 @@ label {
     }
   }
 }*/
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003208}}
-.ui-dialog {
+/*.ui-dialog {
   position: fixed;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003212}}
+}*/
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003216}}
 .ui-widget-overlay {
   background: #000;
   opacity: 0.8;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003221}}
+.logo {
+  position: absolute;
+  left: 15px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  padding: 15px;
+  text-align: center;
+  background: #ff0800;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjA4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY4YzAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #ff0800 0%, darkorange 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ff0800), color-stop(100%, darkorange));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #ff0800 0%, darkorange 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #ff0800 0%, darkorange 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #ff0800 0%, darkorange 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #ff0800 0%, #ff8c00 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#ff8c00',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */
+  z-index: 2;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003243}}
+.logo:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003249}}
+.logo img {
+  vertical-align: middle;
+  max-width: 120px;
+  max-height: 120px;
 }
 
 @media (min-width: 768px) {
@@ -329,69 +361,79 @@ label {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000313}}
-  .page-top-wrapper .region, .center-wrapper .region, .page-bottom-wrapper .region {
+  .page-top-wrapper .region,
+  .center-wrapper .region,
+  .page-bottom-wrapper .region {
     display: table-cell;
+    vertical-align: top;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000320}}
   footer .section {
     display: table;
     width: 100%;
     table-layout: fixed;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000322}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000325}}
   footer .region {
     display: table-cell;
+    vertical-align: top;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000332}}
   .header.fixed {
     position: fixed;
     width: 100%;
     z-index: 1;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000338}}
+  .header .section {
+    position: relative;
+  }
 }
 @media (min-width: 1025px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000345}}
   #page {
     display: table;
-    max-width: 1140px;
     width: 100%;
-    margin: 0 auto;
     height: 100%;
     table-layout: fixed;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000351}}
   #main {
     display: table-row;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000354}}
   #footer {
     display: table-row;
     height: 1px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000358}}
   .header.fixed {
     max-width: 1140px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000362}}
+  .centered {
+    max-width: 1140px;
+    margin: 0 auto;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000031}}
 .region-navigation {
   padding: 0;
+  margin-left: 175px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000036}}
 .navigation {
   position: static;
   top: 0;
   border-bottom: solid 4px orange;
   z-index: 2;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\0000311}}
-.navigation ul {
   background: #858585;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\0000314}}
@@ -476,29 +518,28 @@ label {
   color: #858585;
 }
 @media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000035}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000036}}
   .navigation {
     width: 100%;
-    max-width: 1140px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003101}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003100}}
   .navigation ul li {
     margin: 0 -4px 0 0;
     position: relative;
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003106}}
   .navigation ul li a:hover, .navigation ul li a.activeUl {
     background: white;
     color: #858585;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003111}}
   .navigation ul li a:hover + ul, .navigation ul li a.activeUl + ul {
     display: block;
     opacity: 1;
     visibility: visible;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003117}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003116}}
   .navigation ul li a:hover + ul ul, .navigation ul li a.activeUl + ul ul {
     display: none;
     opacity: 0;
@@ -508,11 +549,11 @@ label {
     -webkit-transition: opacity 0.3s;
     transition: opacity 0.3s;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003126}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003125}}
   .navigation ul li a:before {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003130}}
   .navigation ul li ul {
     position: absolute;
     top: 32px;
@@ -522,35 +563,35 @@ label {
     visibility: hidden;
     z-index: 100;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003140}}
   .navigation ul li ul li a {
     padding-left: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003148}}
   .navigation ul ul ul {
     left: 100%;
     top: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003155}}
   .navigation ul ul .expanded:hover ul {
     display: block;
     opacity: 1;
     visibility: visible;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003165}}
   .navigation .expanded {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003171}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003170}}
   .navigation .expanded .expanded > a:after {
     transform: rotate(90deg);
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003176}}
   .navigation .expanded .expanded > a:hover:after, .navigation .expanded .expanded > a.activeUl:after {
     transform: rotate(0deg);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003185}}
 .navigation.fixedNav {
   position: fixed;
   top: 0px;
@@ -873,9 +914,22 @@ form input {
 .ui-login .ui-widget-header .ui-icon {
   width: 34px;
   height: 34px;
-  background-position: 0 0;
   height: 34px;
   width: 34px;
+  background-image: url('../img/sprite/icons-s4f3cff661d.png');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .ui-login .ui-widget-header .ui-icon {
+    background-image: url('../img/sprite/icons2x-sd3a3598a7d.png');
+    background-position: 0 0;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_block\.scss}line{font-family:\0000322}}
 .ui-login .ui-dialog-title {
