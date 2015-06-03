@@ -1,12 +1,15 @@
 (function ($) {
     if (Drupal.settings.navFixed) {
-      var stickyRibbonTop = $('.navigation').offset().top;
+      var nav = $('.navigation'),
+          logo = $('.logo'),
+          stickyRibbonTop = nav.offset().top;
       $(window).scroll(function(){
         if(($(window).scrollTop() > stickyRibbonTop) && $(window).width() > 768) {
-          $('.navigation').addClass('fixedNav');
+          nav.addClass('fixedNav');
         } else {
-          $('.navigation').removeClass('fixedNav');
+          nav.removeClass('fixedNav');
         }
+        logo.css('top', -$(window).scrollTop());
       });
     }
 
