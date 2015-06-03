@@ -48,12 +48,6 @@
 
     <main id="main" class="clearfix push">
 
-      <?php if ($breadcrumb): ?>
-        <div id="breadcrumb"><?php print $breadcrumb; ?></div>
-      <?php endif; ?>
-
-      <?php print $messages; ?>
-
       <?php if ($page['navigation']): ?>
         <nav class="navigation" role="navigation"><div class="section centered">
           <?php print render($page['navigation']); ?>
@@ -75,6 +69,11 @@
         <?php endif; ?>
 
         <div class="page-top-wrapper <?php /*print $page_top_regions_class;*/ ?>">
+
+          <?php if ($breadcrumb): ?>
+            <div class="breadcrumb"><?php print $breadcrumb; ?></div>
+          <?php endif; ?>
+
           <?php if ($page['page_top_first']): ?>
             <?php print render($page['page_top_first']); ?>
           <?php endif; ?>
@@ -98,7 +97,7 @@
               <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
               <a id="main-content"></a>
               <?php print render($title_prefix); ?>
-              <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+              <?php if ($title): ?><h1 class="title page-title"><?php print $title; ?></h1><?php endif; ?>
               <?php print render($title_suffix); ?>
               <?php if ($tabs = render($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
               <?php print render($page['help']); ?>
@@ -133,7 +132,8 @@
       </div></div> <!-- /.section, /#content -->
     </main> <!-- /#main -->
 
-    <footer id="footer" role="contentinfo"><div class="section centered">
+    <footer class="footer" role="contentinfo">
+      <div class="section centered">
         <?php if ($page['footer_first']): ?>
           <?php print render($page['footer_first']); ?>
         <?php endif; ?>
@@ -141,6 +141,7 @@
         <?php if ($page['footer_second']): ?>
           <?php print render($page['footer_second']); ?>
         <?php endif; ?>
-    </footer></div> <!-- /.section, /#footer -->
+      </div>
+    </footer> <!-- /.section, /#footer -->
 
   </div> <!-- /#page-wrapper -->

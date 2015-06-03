@@ -1,4 +1,5 @@
-$brillianceGreen: #858585;
+$firstColor: #363636;
+$secondColor: #ffa500;
 $hoverMenuBG: #fff;
 $subMenuBG: #64b94a;
 
@@ -16,7 +17,8 @@ html, body {
 }
 
 .header {
-  background: palevioletred;
+  background: #232323;
+  height: 50px;
 }
 
 #main.push {
@@ -52,7 +54,7 @@ html, body {
 }*/
 
 .name-and-slogan {
-  margin-left: 180px;
+  margin-left: 135px;
 }
 
 .region-page-top-first {
@@ -99,13 +101,26 @@ ul.menu {
   clear: both;
 }
 
-.region-footer-first {
+.footer {
+  background: $firstColor;
+
+  .block > h2 {
+    color: $secondColor;
+    border-bottom: 1px solid $secondColor;
+  }
+
+  p {
+    color: $secondColor;
+  }
+}
+
+/*.region-footer-first {
   background: orangered;
 }
 
 .region-footer-second {
   background: thistle;
-}
+}*/
 
 /*---Brilliance Slider---*/
 
@@ -222,10 +237,10 @@ label {
   position: absolute;
   left: 15px;
   display: block;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   //background: darkorange;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   background: #ff0800; /* Old browsers */
   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -239,7 +254,6 @@ label {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#ff8c00',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
   z-index: 2;
 
-
   &:before {
     content: '';
     display: inline-block;
@@ -248,7 +262,15 @@ label {
 
   img {
     vertical-align: middle;
-    max-width: 120px;
-    max-height: 120px;
+    max-width: 90px;
+    max-height: 90px;
   }
+}
+
+.breadcrumb {
+  display: table-row;
+}
+
+.messages {
+  margin: 10px;
 }

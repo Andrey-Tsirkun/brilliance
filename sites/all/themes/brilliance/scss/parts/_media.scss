@@ -51,9 +51,13 @@ $bpDesktop: 1025px;
   #main {
     display: table-row;
   }
-  #footer {
+  .footer {
     display: table-row;
     height: 1px;
+
+    .footerInnerWrap {
+
+    }
   }
   .header.fixed {
     max-width: 1140px;
