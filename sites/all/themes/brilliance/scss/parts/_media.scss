@@ -42,7 +42,7 @@ $bpDesktop: 1025px;
 }
 
 @include breakpoint ($bpDesktop) {
-  #page {
+  .page {
     display: table;
     width: 100%;
     height: 100%;

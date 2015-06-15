@@ -25,5 +25,11 @@ regions[footer_second] = Footer Second
 regions[highlighted] = Highlighted
 
 settings[menu_state] = FALSE
-settings[brilliance_slider] = FALSE
-settings[slider_upload] = FALSE
+settings['footer_social_icons'][social_icons] = FALSE
+settings['footer_social_icons'][fb_url] = 'https://www.facebook.com/'
+settings['footer_social_icons'][twitter_url] = 'https://www.twitter.com/'
+settings['footer_social_icons'][youtube_url] = 'https://youtube.com/'
+settings['footer_social_icons'][googleplus_url] = 'https://plus.google.com/'
+settings['footer_social_icons'][pinterest_url] = 'https://www.pinterest.com/'
+settings['footer_social_icons'][linkedin_url] = 'https://www.linkedin.com/'
+settings['footer_social_icons'][instagram_url] = 'https://instagram.com/'

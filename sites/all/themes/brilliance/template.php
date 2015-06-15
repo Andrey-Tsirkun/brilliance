@@ -5,6 +5,83 @@ function brilliance_preprocess_region(&$variables) {
 }
 
 function brilliance_preprocess_page(&$variables) {
+
+  if(theme_get_setting('social_icons', 'brilliance')) {
+    $social_links_array = array();
+
+    if(theme_get_setting('fb_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Facebook'), theme_get_setting('fb_url', 'brilliance'), array(
+          'attributes' => array(
+              'target'=>'_blank',
+              'class' => 'facebook-icon',
+              'title' => t('Facebook Account'),
+              'data-tooltip' => t('Facebook Account')
+          )
+      ));
+    }
+    if(theme_get_setting('twitter_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Twitter'), theme_get_setting('twitter_url', 'brilliance'), array(
+          'attributes' => array(
+            'target'=>'_blank',
+            'class' => 'twitter-icon',
+            'title' => t('Twitter Account'),
+            'data-tooltip' => t('Twitter Account')
+          )
+      ));
+    }
+    if(theme_get_setting('youtube_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Youtube'), theme_get_setting('youtube_url', 'brilliance'), array(
+              'attributes' => array(
+                  'target'=>'_blank',
+                  'class' => 'youtube-icon',
+                  'title' => t('Youtube Account'),
+                  'data-tooltip' => t('Youtube Account')
+              ))
+      );
+    }
+    if(theme_get_setting('googleplus_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Google+'), theme_get_setting('googleplus_url', 'brilliance'), array(
+          'attributes' => array(
+              'target'=>'_blank',
+              'class' => 'googleplus-icon',
+              'title' => t('Google+ Account'),
+              'data-tooltip' => t('Google+ Account')
+          ))
+      );
+    }
+    if(theme_get_setting('pinterest_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Pinterest'), theme_get_setting('pinterest_url', 'brilliance'), array(
+          'attributes' => array(
+              'target'=>'_blank',
+              'class' => 'pinterest-icon',
+              'title' => t('Pinterest Account'),
+              'data-tooltip' => t('Pinterest Account')
+          ))
+      );
+    }
+    if(theme_get_setting('linkedin_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('LinkedIn'), theme_get_setting('linkedin_url', 'brilliance'), array(
+          'attributes' => array(
+              'target'=>'_blank',
+              'class' => 'linkedin-icon',
+              'title' => t('LinkedIn Account'),
+              'data-tooltip' => t('LinkedIn Account')
+          ))
+      );
+    }
+    if(theme_get_setting('instagram_url', 'brilliance')) {
+      $social_links_array['items'][] = l(t('Instagram'), theme_get_setting('instagram_url', 'brilliance'), array(
+          'attributes' => array(
+              'target'=>'_blank',
+              'class' => 'instagram-icon',
+              'title' => t('Instagram Account'),
+              'data-tooltip' => t('Instagram Account')
+          ))
+      );
+    }
+
+    $variables['social_links'] = theme('item_list', $social_links_array);
+  }
   /** @var TYPE_NAME $variables */
 
   /*$page_top_regions = array(

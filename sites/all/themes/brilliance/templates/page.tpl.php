@@ -8,10 +8,8 @@
  */
 ?>
 
-  <div id="page">
-
+  <div class="page">
     <header class="header" role="banner"><div class="section centered clearfix">
-
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="logo">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
@@ -56,17 +54,15 @@
 
       <div id="content" class="column centered"><div class="section">
 
-        <?php if ($brilliance_slider): ?>
-          <div class="brilliance-slider">
-            <ul>
-              <li><img src="sites/all/themes/brilliance/img/1.png"></li>
-              <li><img src="sites/all/themes/brilliance/img/2.png"></li>
-              <li><img src="sites/all/themes/brilliance/img/3.png"></li>
-            </ul>
-            <div class="prevButton sliderButton"></div>
-            <div class="nextButton sliderButton"></div>
-          </div>
-        <?php endif; ?>
+        <div class="brilliance-slider">
+          <ul>
+            <li><img src="sites/all/themes/brilliance/img/1.png"></li>
+            <li><img src="sites/all/themes/brilliance/img/2.png"></li>
+            <li><img src="sites/all/themes/brilliance/img/3.png"></li>
+          </ul>
+          <div class="prevButton sliderButton"></div>
+          <div class="nextButton sliderButton"></div>
+        </div>
 
         <div class="page-top-wrapper <?php /*print $page_top_regions_class;*/ ?>">
 
@@ -96,6 +92,7 @@
             <main role="main">
               <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
               <a id="main-content"></a>
+              <?php print $messages; ?>
               <?php print render($title_prefix); ?>
               <?php if ($title): ?><h1 class="title page-title"><?php print $title; ?></h1><?php endif; ?>
               <?php print render($title_suffix); ?>
@@ -142,6 +139,12 @@
           <?php print render($page['footer_second']); ?>
         <?php endif; ?>
       </div>
+
+      <?php if (!empty($social_links)): ?>
+        <div class="social-section centered">
+          <?php print $social_links; ?>
+        </div>
+      <?php endif; ?>
     </footer> <!-- /.section, /#footer -->
 
   </div> <!-- /#page-wrapper -->
