@@ -193,3 +193,67 @@
     }
   }
 }
+
+.social-section {
+  padding: 10px;
+  height: 52px;
+
+  .item-list {
+    ul {
+      height: 32px;
+
+      li {
+        margin: 0 10px 0 0;
+        @include transition(margin-top 0.1s);
+
+        &.last {
+          margin-right: 0;
+        }
+
+        &:hover {
+         margin-top: -10px;
+        }
+      }
+    }
+  }
+
+  li {
+    display: inline-block;
+    float: left;
+  }
+
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+  }
+}
+
+.facebook-icon {
+  @include brilliance-sprite(facebook-icon, $icons, $icons2x);
+}
+
+.twitter-icon {
+  @include brilliance-sprite(twitter-icon, $icons, $icons2x);
+}
+
+.youtube-icon {
+  @include brilliance-sprite(youtube-icon, $icons, $icons2x);
+}
+
+.googleplus-icon {
+  @include brilliance-sprite(googleplus-icon, $icons, $icons2x);
+}
+
+.pinterest-icon {
+  @include brilliance-sprite(pinterest-icon, $icons, $icons2x);
+}
+
+.linkedin-icon {
+  @include brilliance-sprite(linkedin-icon, $icons, $icons2x);
+}
+
+.instagram-icon {
+  @include brilliance-sprite(instagram-icon, $icons, $icons2x);
+}

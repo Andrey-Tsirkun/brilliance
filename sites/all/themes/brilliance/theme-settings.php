@@ -9,57 +9,70 @@
  */
 
 function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
-
   $form['brilliance_settings'] = array(
-    '#type' => 'fieldset',
-    '#title' => t('Brilliance Theme Settings'),
-    '#collapsible' => FALSE,
-    '#collapsed' => FALSE,
+      '#type' => 'fieldset',
+      '#title' => t('Brilliance Theme Settings'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
   );
   $form['brilliance_settings']['menu_state'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Menu state'),
-    '#description' => t('Enable fixed menu.'),
-    '#default_value' => (theme_get_setting('menu_state', 'brilliance')),
+      '#type' => 'checkbox',
+      '#title' => t('Menu state'),
+      '#description' => t('Enable fixed menu.'),
+      '#default_value' => theme_get_setting('menu_state', 'brilliance'),
   );
-  /*$form['brilliance_settings']['brilliance_slider'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Brilliance Slider'),
-    '#description' => t('Enable Brilliance Slider'),
-    '#default_value' => (theme_get_setting('brilliance_slider', 'brilliance')),
+  $form['brilliance_settings']['footer_social_icons'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Social links'),
+      '#collapsible' => TRUE,
+      '#collapsed' => TRUE,
   );
-  $form['brilliance_settings']['slider_upload'] = array(
-    '#title' => t('Slider items'),
-    '#description' => t('Upload and configure each slider item.'),
-    '#type' => 'managed_file',
-    '#upload_location' => 'public://brilliance-slider/',
-    '#upload_validators' => array(
-      'file_validate_extensions' => array('gif png jpg jpeg'),
-      'file_validate_is_image' => array(),
-      'file_validate_size' => array(1 * 1140 * 768),
-    ),
-    '#default_value' => theme_get_setting('slider_upload'),
-    '#progress_indicator' => 'bar',
-    '#attributes' => array('multiple' => 'multiple'),
+  $form['brilliance_settings']['footer_social_icons']['social_icons'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Social icons'),
+      '#default_value' => theme_get_setting('social_icons', 'brilliance'),
+      '#description' => t('Enable social icons.'),
   );
-  $form['#submit'][] = 'brilliance_settings_form_submit';
-  $themes = list_themes();
-  $active_theme = $GLOBALS['theme_key'];
-  $form_state['build_info']['files'][] = str_replace("/$active_theme.info", '', $themes[$active_theme]->filename) . '/theme-settings.php';*/
+  $form['brilliance_settings']['footer_social_icons']['fb_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Facebook URL'),
+      '#default_value' => theme_get_setting('fb_url', 'brilliance'),
+      '#description' => t('Enter your Facebook profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['twitter_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Twitter URL'),
+      '#default_value' => theme_get_setting('twitter_url', 'brilliance'),
+      '#description' => t('Enter your Twitter profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['youtube_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Youtube URL'),
+      '#default_value' => theme_get_setting('youtube_url', 'brilliance'),
+      '#description' => t('Enter your Youtube profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['googleplus_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Google+ URL'),
+      '#default_value' => theme_get_setting('googleplus_url', 'brilliance'),
+      '#description' => t('Enter your Google+ profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['pinterest_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Pinterest URL'),
+      '#default_value' => theme_get_setting('pinterest_url', 'brilliance'),
+      '#description' => t('Enter your Google+ profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['linkedin_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('LinkedIn URL'),
+      '#default_value' => theme_get_setting('linkedin_url', 'brilliance'),
+      '#description' => t('Enter your LinkedIn profile URL.'),
+  );
+  $form['brilliance_settings']['footer_social_icons']['instagram_url'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Instagram URL'),
+      '#default_value' => theme_get_setting('instagram_url', 'brilliance'),
+      '#description' => t('Enter your Instagram profile URL.'),
+  );
 }
-
-/*function brilliance_settings_form_submit(&$form, $form_state) {
-  $image_fid = $form_state['values']['slider_upload'];
-  $image = file_load($image_fid);
-  if (is_object($image)) {
-    // Check to make sure that the file is set to be permanent.
-    if ($image->status == 0) {
-      // Update the status.
-      $image->status = FILE_STATUS_PERMANENT;
-      // Save the update.
-      file_save($image);
-      // Add a reference to prevent warnings.
-      file_usage_add($image, 'brilliance', 'theme', 1);
-    }
-  }
-}*/

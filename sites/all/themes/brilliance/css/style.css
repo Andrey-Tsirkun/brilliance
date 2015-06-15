@@ -1,3 +1,4 @@
+@charset "IBM866";
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby200-x64\/lib\/ruby\/gems\/2\.0\.0\/gems\/compass-core-1\.0\.3\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -183,12 +184,12 @@ ul.menu {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003107}}
 .footer .block > h2 {
-  color: orange;
-  border-bottom: 1px solid orange;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003112}}
 .footer p {
-  color: orange;
+  color: #fff;
 }
 
 /*.region-footer-first {
@@ -369,6 +370,31 @@ label {
   margin: 10px;
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003280}}
+.socialSection a::after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  /* Главная часть кода, определяющая содержимое всплывающей подсказки */
+  margin-top: -24px;
+  opacity: 0;
+  /* Наш элемент прозрачен... */
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  /* ...и скрыт. */
+  transition: all 0.4s ease-in-out;
+  /* Добавить плавности по вкусу */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003295}}
+.socialSection a:hover::after {
+  opacity: 1;
+  /* Показываем его */
+  visibility: visible;
+}
+
 @media (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\000035}}
   .region-sidebar-left, .region-sidebar-right {
@@ -415,7 +441,7 @@ label {
 }
 @media (min-width: 1025px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_media\.scss}line{font-family:\0000345}}
-  #page {
+  .page {
     display: table;
     width: 100%;
     height: 100%;
@@ -626,6 +652,184 @@ label {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003191}}
 .navigation.fixedNav .region-navigation {
   margin-left: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003197}}
+.social-section {
+  padding: 10px;
+  height: 52px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003202}}
+.social-section .item-list ul {
+  height: 32px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003205}}
+.social-section .item-list ul li {
+  margin: 0 10px 0 0;
+  -moz-transition: margin-top 0.1s;
+  -o-transition: margin-top 0.1s;
+  -webkit-transition: margin-top 0.1s;
+  transition: margin-top 0.1s;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003209}}
+.social-section .item-list ul li.last {
+  margin-right: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003213}}
+.social-section .item-list ul li:hover {
+  margin-top: -10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003220}}
+.social-section li {
+  display: inline-block;
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003225}}
+.social-section a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003233}}
+.facebook-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -34px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .facebook-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -34px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003237}}
+.twitter-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -194px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .twitter-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -194px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003241}}
+.youtube-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -226px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .youtube-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -226px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003245}}
+.googleplus-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -66px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .googleplus-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -66px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003249}}
+.pinterest-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -162px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .pinterest-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -162px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003253}}
+.linkedin-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -130px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .linkedin-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -130px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003257}}
+.instagram-icon {
+  height: 32px;
+  width: 32px;
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
+  background-position: 0 -98px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .instagram-icon {
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
+    background-position: 0 -98px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
 }
 
 @font-face {
@@ -947,14 +1151,14 @@ form input {
   height: 34px;
   height: 34px;
   width: 34px;
-  background-image: url('../img/sprite/icons-s4f3cff661d.png');
+  background-image: url('../img/sprite/icons-seb9f12d48b.png');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .ui-login .ui-widget-header .ui-icon {
-    background-image: url('../img/sprite/icons2x-sd3a3598a7d.png');
+    background-image: url('../img/sprite/icons2x-s10514e7b17.png');
     background-position: 0 0;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
