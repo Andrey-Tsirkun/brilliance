@@ -5,9 +5,8 @@
 $icons-layout: vertical;
 $icons-spacing: 20px;
 $icons-sprite-dimensions: true;
-//@import 'icons/*.png';
-//@include all-icons-sprites;
 @import 'breakpoint';
+@import 'parts/sprites';
 @import 'parts/design';
 @import 'parts/media';
 @import 'parts/sprites';
