@@ -25,6 +25,7 @@ regions[footer_second] = Footer Second
 regions[highlighted] = Highlighted
 
 settings[menu_state] = FALSE
+settings['brilliance_slider']['slides_count'] = 2
 settings['footer_social_icons'][social_icons] = FALSE
 settings['footer_social_icons'][fb_url] = 'https://www.facebook.com/'
 settings['footer_social_icons'][twitter_url] = 'https://www.twitter.com/'

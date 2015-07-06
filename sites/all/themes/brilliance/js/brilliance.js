@@ -2,7 +2,14 @@
     if (Drupal.settings.navFixed) {
       var nav = $('.navigation'),
           logo = $('.logo'),
+          menuBlock = $('.navigation .block-menu'),
+          homeLink = '<a href="'
+              + Drupal.settings.homeLinkURL +
+              '" class="homelink" title="'
+              + Drupal.t('Home') + '">'
+              + Drupal.t('Home') + '</a>';
           stickyRibbonTop = nav.offset().top;
+      menuBlock.before(homeLink);
       $(window).scroll(function(){
         if(($(window).scrollTop() > stickyRibbonTop) && $(window).width() > 768) {
           nav.addClass('fixedNav');

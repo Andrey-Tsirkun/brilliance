@@ -183,6 +183,17 @@
     }
   }
 
+  .homelink {
+    width: 32px;
+    height: 32px;
+    display: none;
+    text-indent: -9999px;
+    float: left;
+    @include brilliance-sprite(home, $iconsOrange, $icons2xOrange);
+    opacity: 0;
+    @include transition(opacity 0.2s);
+  }
+
   &.fixedNav {
     position: fixed;
     top: 0;
@@ -190,6 +201,11 @@
 
     .region-navigation {
       margin-left: 0;
+    }
+
+    .homelink {
+      display: inline-block;
+      opacity: 1;
     }
   }
 }
@@ -204,14 +220,15 @@
 
       li {
         margin: 0 10px 0 0;
-        @include transition(margin-top 0.1s);
+        @include transition(all 0.1s);
 
         &.last {
           margin-right: 0;
         }
 
         &:hover {
-         margin-top: -10px;
+          height:42px;
+          margin-top: -10px;
         }
       }
     }
@@ -231,29 +248,29 @@
 }
 
 .facebook-icon {
-  @include brilliance-sprite(facebook-icon, $icons, $icons2x);
+  @include brilliance-sprite(facebook-icon, $iconsOrange, $icons2xOrange);
 }
 
 .twitter-icon {
-  @include brilliance-sprite(twitter-icon, $icons, $icons2x);
+  @include brilliance-sprite(twitter-icon, $iconsOrange, $icons2xOrange);
 }
 
 .youtube-icon {
-  @include brilliance-sprite(youtube-icon, $icons, $icons2x);
+  @include brilliance-sprite(youtube-icon, $iconsOrange, $icons2xOrange);
 }
 
 .googleplus-icon {
-  @include brilliance-sprite(googleplus-icon, $icons, $icons2x);
+  @include brilliance-sprite(googleplus-icon, $iconsOrange, $icons2xOrange);
 }
 
 .pinterest-icon {
-  @include brilliance-sprite(pinterest-icon, $icons, $icons2x);
+  @include brilliance-sprite(pinterest-icon, $iconsOrange, $icons2xOrange);
 }
 
 .linkedin-icon {
-  @include brilliance-sprite(linkedin-icon, $icons, $icons2x);
+  @include brilliance-sprite(linkedin-icon, $iconsOrange, $icons2xOrange);
 }
 
 .instagram-icon {
-  @include brilliance-sprite(instagram-icon, $icons, $icons2x);
+  @include brilliance-sprite(instagram-icon, $iconsOrange, $icons2xOrange);
 }

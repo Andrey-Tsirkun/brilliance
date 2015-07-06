@@ -3,15 +3,30 @@
 
   span {
     font: italic 12px normal $defaultFontFamily;
+    display: inline-block;
+    line-height: 22px;
   }
 
   a {
     font-style: normal;
     border-bottom: 1px solid transparent;
     text-transform: capitalize;
+    line-height: 22px;
 
     &:hover {
       border-bottom: 1px $linkColor dotted;
     }
   }
+}
+
+.nodeSubmitted {
+  margin-right: 5px;
+  text-indent: -9999px;
+  @include brilliance-sprite(author, $iconsOrange, $icons2xOrange);
+}
+
+.onNode {
+  margin: 0 5px 0 10px;
+  text-indent: -9999px;
+  @include brilliance-sprite(posted-icon, $iconsOrange, $icons2xOrange);
 }

@@ -267,10 +267,6 @@ label {
   }
 }
 
-.breadcrumb {
-  display: table-row;
-}
-
 .messages {
   margin: 10px;
 }
@@ -296,5 +292,23 @@ label {
       opacity: 1; /* Показываем его */
       visibility: visible;
     }
+  }
+}
+
+.breadcrumb {
+  margin: 3px 15px;
+  overflow: hidden;
+  padding: 0;
+
+  a {
+    display:inline-block;
+    float: left;
+  }
+
+  span {
+    display: inline-block;
+    float: left;
+    margin: 2px 5px;
+    @include brilliance-sprite(breadcrumb-separator, $iconsOrange, $icons2xOrange);
   }
 }
