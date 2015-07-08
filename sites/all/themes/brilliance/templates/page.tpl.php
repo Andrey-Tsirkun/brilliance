@@ -54,7 +54,9 @@
 
       <div id="content" class="column centered"><div class="section">
 
-        <div class="brilliance-slider">
+       <div class="brilliance-slider"><?php print $slider; ?></div>
+
+       <!--<div class="brilliance-slider123">
           <ul>
             <li><img src="sites/all/themes/brilliance/img/1.png"></li>
             <li><img src="sites/all/themes/brilliance/img/2.png"></li>
@@ -62,7 +64,7 @@
           </ul>
           <div class="prevButton sliderButton"></div>
           <div class="nextButton sliderButton"></div>
-        </div>
+        </div> -->
 
         <div class="page-top-wrapper <?php /*print $page_top_regions_class;*/ ?>">
 
@@ -145,7 +147,5 @@
         </div>
       <?php endif; ?>
     </footer> <!-- /.section, /#footer -->
-
-    <div class="brilliance-slider123"><?php print $slider; ?></div>
 
   </div> <!-- /#page-wrapper -->
