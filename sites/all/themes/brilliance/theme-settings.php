@@ -165,10 +165,28 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       '#type' => 'file',
       '#title' => t('Upload a new slide'),
       '#weight' => $i,
+      '#element_validate' => array('brilliance_images_validate'),
   );
 
   $form['#submit'][]   = 'brilliance_settings_submit';
+  $form['slide']['image_upload']['#element_validate'][] = 'brilliance_settings_submit';
   return $form;
+}
+
+function brilliance_images_validate ($element, &$form_state) {
+  //dsm($form_state);
+  $images_array = $form_state['values']['images'];
+  $image_width = 1104;
+  $image_height = 300;
+
+  foreach ($images_array as $image) {
+    //dsm($image);
+
+    //if ($image['image']['image_path'][0] != $image_width && $image['image']['image_path'][1] != $image_height) {
+      //dsm(getimagesize($image['image']['image_path']));
+      //form_error($element, t('Please enter image with right dimension.'));
+    //}
+  }
 }
 
 function brilliance_get_banners($all = TRUE) {
@@ -183,7 +201,7 @@ function brilliance_get_banners($all = TRUE) {
   // Create list of banner to return
   $slides_value = array();
   foreach ($slides as $slide) {
-    $slide['weight'] = $slide['image_weight'];
+    //$slide['weight'] = $slide['image_weight'];
     $slides_value[] = $slide;
   }
 
@@ -210,7 +228,7 @@ function _brilliance_install() {
     $slides[$i] = $slide;
   }
   // Save banner data
-  brilliance_set_banners($slides);
+  brilliance_set_slides($slides);
   // Flag theme is installed
   variable_set('theme_brilliance_first_install', FALSE);
 }
@@ -255,6 +273,18 @@ function _brilliance_banner_form($image_data) {
 
 function brilliance_settings_submit($form, &$form_state) {
   $settings = array();
+  $image_width = 1140;
+  $image_height = 300;
+
+  if ($file = file_save_upload('image_upload')) {
+    $image_data = getimagesize($file->uri);
+    if ($image_data[0] != $image_width && $image_data[1] != $image_height) {
+      //@todo update text in t() function below
+      form_set_error('image_upload', t('Please upload valid image.You try to upload image with' . $image_data[0]  . 'x' . $image_data[1] . ' dimension.'));
+      $form_state['error'] = TRUE;
+      return;
+    }
+  }
 
   // Update image field
   foreach ($form_state['input']['images'] as $image) {
@@ -283,7 +313,7 @@ function brilliance_settings_submit($form, &$form_state) {
   }
 
   // Save settings
-  brilliance_set_banners($settings);
+  brilliance_set_slides($settings);
 }
 
 /**
@@ -332,7 +362,7 @@ function _brilliance_save_image($file, $slide_folder = 'public://brilliance-slid
   return FALSE;
 }
 
-function brilliance_set_banners($value) {
+function brilliance_set_slides($value) {
   variable_set('theme_brilliance_banner_settings', $value);
 }
 

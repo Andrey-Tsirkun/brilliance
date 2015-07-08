@@ -121,13 +121,14 @@ function brilliance_preprocess_page(&$variables) {
 function brilliance_show_slides() {
   $slides = brilliance_get_banners(FALSE);
   $output = '';
+  $buttons = '<div class="prevButton sliderButton"></div><div class="nextButton sliderButton"></div>';
   $items = array();
   foreach ($slides as $key => $value) {
     $items['items'][] = array(
         l('<img src="' . file_create_url($slides[$key]['image_path']) . '" alt="slider image" />', $slides[$key]['image_url'],array('html' => TRUE))
     );
   }
-  $output .= theme('item_list', $items);
+  $output .= theme('item_list', $items) . $buttons;
   return $output;
 }
 
