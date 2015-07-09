@@ -134,7 +134,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   // Image upload section ======================================================
-  $banners = brilliance_get_banners();
+  $banners = brilliance_get_banners_tpl();
 
   $form['slide']['images'] = array(
       '#type' => 'vertical_tabs',
@@ -169,12 +169,16 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
   );
 
   $form['#submit'][]   = 'brilliance_settings_submit';
-  $form['slide']['image_upload']['#element_validate'][] = 'brilliance_settings_submit';
+  //$form['slide']['image_upload']['#element_validate'][] = 'brilliance_settings_submit';
   return $form;
 }
 
 function brilliance_images_validate ($element, &$form_state) {
-  //dsm($form_state);
+  //dpm($element);
+  //dpm($form_state);
+  dpm(getimagesize($_FILES['files']['tmp_name']['image_upload']));
+
+  return;
   $images_array = $form_state['values']['images'];
   $image_width = 1104;
   $image_height = 300;
@@ -189,7 +193,7 @@ function brilliance_images_validate ($element, &$form_state) {
   }
 }
 
-function brilliance_get_banners($all = TRUE) {
+function brilliance_get_banners_tpl($all = TRUE) {
   // Get all banners
   $slides = variable_get('theme_brilliance_banner_settings', array());
   $delay = theme_get_setting('slide_delay');
@@ -280,7 +284,7 @@ function brilliance_settings_submit($form, &$form_state) {
     $image_data = getimagesize($file->uri);
     if ($image_data[0] != $image_width && $image_data[1] != $image_height) {
       //@todo update text in t() function below
-      form_set_error('image_upload', t('Please upload valid image.You try to upload image with' . $image_data[0]  . 'x' . $image_data[1] . ' dimension.'));
+      form_set_error('image_upload', t('Please upload valid image.You try to upload image with !w x !h', array('!w' => $image_data[0], ) . $image_data[0]  . 'x' . $image_data[1] . ' dimension.'));
       $form_state['error'] = TRUE;
       return;
     }
