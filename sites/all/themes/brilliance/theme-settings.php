@@ -85,47 +85,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       '#collapsed' => TRUE,
   );
 
- /*$form['brilliance_settings']['brilliance_slider']['slides_count'] = array(
-      '#title' => 'Number of slides',
-      '#type' => 'textfield',
-      '#description' => t('Enter the total number of images in the slideshow.'),
-      '#default_value' => theme_get_setting('slides_count','brilliance'),
-      '#size' => 3,
-  );
-
-  for ($i = 0; $i < theme_get_setting('slides_count'); $i++){
-    $form['brilliance_settings']['brilliance_slider']['slide_' . $i] = array(
-        '#type' => 'fieldset',
-        '#title' => t('Slide') . ' #'.($i+1),
-        '#collapsible' => TRUE,
-        '#collapsed' => TRUE,
-    );
-    $form['brilliance_settings']['brilliance_slider']['slide_' . $i]['slide_image' . $i] = array(
-        '#type' => 'managed_file',
-        '#title' => t('Slide image'),
-        '#required' => TRUE,
-        '#upload_location' => 'public://slider/',
-        '#default_value' => theme_get_setting('slide_image' . $i, 'brilliance'),
-        '#upload_validators' => array(
-            'file_validate_extensions' => array('gif png jpg jpeg'),
-            'file_validate_image_resolution' => array('1140x300')
-        ),
-    );
-    $form['brilliance_settings']['brilliance_slider']['slide_' . $i]['slide_title' . $i] = array(
-        '#type' => 'textfield',
-        '#title' => t('Slide title'),
-        '#description' => t('Enter title for current slide.'),
-        '#default_value' => theme_get_setting('slide_title' . $i, 'brilliance'),
-    );
-    $form['brilliance_settings']['brilliance_slider']['slide_' . $i]['slide_description' . $i] = array(
-        '#type' => 'textarea',
-        '#title' => t('Slide description'),
-        '#description' => t('Enter description for current slide.'),
-        '#default_value' => theme_get_setting('slide_description' . $i, 'brilliance'),
-    );
-  }*/
-
-  $form['slide'] = array(
+  $form['brilliance_settings']['brilliance_slider']['slide'] = array(
       '#type' => 'fieldset',
       '#title' => t('Slide managment [Upload images with dimension 960*502]'),
       '#weight' => 1,
@@ -136,7 +96,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
   // Image upload section ======================================================
   $banners = brilliance_get_banners_tpl();
 
-  $form['slide']['images'] = array(
+  $form['brilliance_settings']['brilliance_slider']['slide']['images'] = array(
       '#type' => 'vertical_tabs',
       '#title' => t('Slide images'),
       '#weight' => 2,
@@ -147,7 +107,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
 
   $i = 0;
   foreach ($banners as $image_data) {
-    $form['slide']['images'][$i] = array(
+    $form['brilliance_settings']['brilliance_slider']['slide']['images'][$i] = array(
         '#type' => 'fieldset',
         '#title' => t('Image !number', array('!number' => $i + 1)),
         '#weight' => $i,
@@ -161,10 +121,16 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
     $i++;
   }
 
-  $form['slide']['image_upload'] = array(
+  $form['brilliance_settings']['brilliance_slider']['slide']['image_upload'] = array(
       '#type' => 'file',
       '#title' => t('Upload a new slide'),
-      '#weight' => $i,
+      '#element_validate' => array('brilliance_images_validate'),
+  );
+
+  $form['brilliance_settings']['brilliance_slider']['slide']['slider_animation'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Autoscroll'),
+      '#description' => t('Add autoscroll to Brilliance Slider'),
       '#element_validate' => array('brilliance_images_validate'),
   );
 
@@ -174,22 +140,13 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
 }
 
 function brilliance_images_validate ($element, &$form_state) {
-  //dpm($element);
-  //dpm($form_state);
-  dpm(getimagesize($_FILES['files']['tmp_name']['image_upload']));
-
-  return;
-  $images_array = $form_state['values']['images'];
-  $image_width = 1104;
-  $image_height = 300;
-
-  foreach ($images_array as $image) {
-    //dsm($image);
-
-    //if ($image['image']['image_path'][0] != $image_width && $image['image']['image_path'][1] != $image_height) {
-      //dsm(getimagesize($image['image']['image_path']));
-      //form_error($element, t('Please enter image with right dimension.'));
-    //}
+  if ($_FILES['files']['tmp_name']['image_upload']) {
+    $image_data = getimagesize($_FILES['files']['tmp_name']['image_upload']);
+    $image_width = 1104;
+    $image_height = 300;
+    if (isset($image_data) && $image_data[0] != $image_width && $image_data[1] != $image_height) {
+      form_error($element, t('Please enter image with right dimension.'));
+    }
   }
 }
 
@@ -210,7 +167,7 @@ function brilliance_get_banners_tpl($all = TRUE) {
   }
 
   // Sort image by weight
-  usort($slides_value, 'drupal_sort_weight');
+  //usort($slides_value, 'drupal_sort_weight');
 
   return $slides_value;
 }
@@ -258,14 +215,28 @@ function _brilliance_banner_form($image_data) {
   );
 
 
-  // Link url
+  // Slide URL.
   $img_form['image_url'] = array(
       '#type' => 'textfield',
       '#title' => t('Url'),
       '#default_value' => $image_data['image_url'],
   );
 
-  // Delete image
+  // Slide title.
+  $img_form['image_title'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Title'),
+      '#default_value' => $image_data['image_title'],
+  );
+
+  // Slide title.
+  $img_form['image_description'] = array(
+      '#type' => 'textarea',
+      '#title' => t('Title'),
+      '#default_value' => $image_data['image_description'],
+  );
+
+  // Delete image.
   $img_form['image_delete'] = array(
       '#type' => 'checkbox',
       '#title' => t('Delete image.'),
@@ -359,6 +330,8 @@ function _brilliance_save_image($file, $slide_folder = 'public://brilliance-slid
     $setting['image_path'] = $destination;
     $setting['image_thumb'] = $image->source;
     $setting['image_url'] = '';
+    $setting['image_title'] = '';
+    $setting['image_description'] = '';
     $setting['image_visibility'] = '*';
     return $setting;
   }

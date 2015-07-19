@@ -96,6 +96,9 @@ function brilliance_preprocess_page(&$variables) {
     global $base_url;
     drupal_add_js(array('navFixed' => TRUE, 'homeLinkURL' => $base_url), 'setting');
   }
+  if (theme_get_setting('slider_animation')) {
+    drupal_add_js(array('sliderAnimation' => TRUE), 'setting');
+  }
   if (theme_get_setting('brilliance_slider')) {
     $variables['brilliance_slider'] = TRUE;
   }
@@ -125,7 +128,9 @@ function brilliance_show_slides() {
   $items = array();
   foreach ($slides as $key => $value) {
     $items['items'][] = array(
-        l('<img src="' . file_create_url($slides[$key]['image_path']) . '" alt="slider image" />', $slides[$key]['image_url'],array('html' => TRUE))
+        l('<img src="' . file_create_url($slides[$key]['image_path']) . '" alt="' . $slides[$key]['image_title'] . '" />' .
+            '<div class="sliderTitle">' . $slides[$key]['image_title'] . '</div>' .
+            '<div class="slideDescription">' . $slides[$key]['image_description'] . '</div>', $slides[$key]['image_url'],array('html' => TRUE))
     );
   }
   $output .= theme('item_list', $items) . $buttons;
