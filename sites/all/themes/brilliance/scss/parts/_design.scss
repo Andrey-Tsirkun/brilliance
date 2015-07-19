@@ -19,6 +19,16 @@ html, body {
 .header {
   background: #232323;
   height: 50px;
+
+  .centered {
+    height: 100%;
+  }
+
+  .clearfix {
+    &:after {
+      display: none;
+    }
+  }
 }
 
 #main.push {
@@ -52,10 +62,6 @@ html, body {
 .page-bottom-4 > div {
   width: 25%;
 }*/
-
-.name-and-slogan {
-  margin-left: 135px;
-}
 
 .region-page-top-first {
   background: #d3d3d3;
@@ -135,16 +141,63 @@ ul.menu {
     list-style: none;
     float: left;
     display: inline-block;
+    opacity: 0;
+    @include transition(all 0.1s);
+
+    &.active {
+      opacity: 1;
+
+      .sliderTitle {
+        top: 40px;
+        opacity: 1;
+      }
+
+      .slideDescription {
+        bottom: 40px;
+        opacity: 1;
+      }
+    }
   }
   ul {
+    padding: 0;
+    margin: 0;
     display: block;
-    height: auto;
+    height: 300px;
     position: relative;
+    overflow: hidden;
+    background-color: #000;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  a {
+    position: relative;
+    display: inline-block;
+  }
+  .sliderTitle {
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    font-size: 30px;
+    font-family: $robotoSlabBold;
+    @include transition(all 1s);
+    opacity: 0;
+  }
+  .slideDescription {
+    position: absolute;
+    right: 40px;
+    bottom: -40px;
+    font-size: 16px;
+    width: 400px;
+    text-align: right;
+    font-family: $robotoSlabRegular;
+    @include transition(all 1s);
+    opacity: 0;
   }
   img {
     display: block;
-    height: auto;
-    max-width: 100%;
   }
 }
 
@@ -234,25 +287,29 @@ label {
 }
 
 .logo {
-  position: absolute;
-  left: 15px;
-  display: block;
-  width: 100px;
-  height: 100px;
-  //background: darkorange;
-  padding: 5px;
-  text-align: center;
-  background: #ff0800; /* Old browsers */
-  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjA4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY4YzAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-  background: -moz-radial-gradient(center, ellipse cover,  #ff0800 0%, #ff8c00 100%); /* FF3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ff0800), color-stop(100%,#ff8c00)); /* Chrome,Safari4+ */
-  background: -webkit-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Opera 12+ */
-  background: -ms-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* IE10+ */
-  background: radial-gradient(ellipse at center,  #ff0800 0%,#ff8c00 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#ff8c00',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
-  z-index: 2;
+  display: none;
+
+  @include breakpoint ($bpTablet) {
+    position: absolute;
+    left: 15px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    //background: darkorange;
+    padding: 5px;
+    text-align: center;
+    background: #ff0800; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZjA4MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmY4YzAwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover,  #ff0800 0%, #ff8c00 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ff0800), color-stop(100%,#ff8c00)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #ff0800 0%,#ff8c00 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #ff0800 0%,#ff8c00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0800', endColorstr='#ff8c00',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+    z-index: 2;
+  }
 
   &:before {
     content: '';
@@ -267,7 +324,7 @@ label {
   }
 }
 
-.messages {
+div.messages {
   margin: 10px;
 }
 
@@ -311,4 +368,45 @@ label {
     margin: 2px 5px;
     @include brilliance-sprite(breadcrumb-separator, $iconsOrange, $icons2xOrange);
   }
+}
+
+.name-and-slogan {
+  display: none;
+
+  @include breakpoint ($bpTablet) {
+    display: block;
+    margin-left: 135px;
+    float: left;
+  }
+}
+
+.mobileMenuButton {
+  display: inline-block;
+  float: left;
+  margin: 13px 8px;
+  @include brilliance-sprite(mobile-menu-button, $iconsOrange, $icons2xOrange);
+
+  @include breakpoint ($bpTablet) {
+    display: none;
+  }
+}
+
+.user-login {
+  display: inline-block;
+  float: right;
+  margin: 8px;
+  text-indent: -9999px;
+  @include brilliance-sprite(login, $iconsOrange, $icons2xOrange);
+
+  /*@include breakpoint ($bpTablet) {
+    float: none;
+    margin: 0;
+    text-indent: 0;
+    background: none;
+  }*/
+}
+
+#site-name {
+  line-height: 50px;
+  text-transform: capitalize;
 }

@@ -20,11 +20,19 @@
       });
     }
 
+  var mobileMenuButton = $('.mobileMenuButton'),
+      navigation = $('.navigation');
+
+  mobileMenuButton.click(function() {
+    navigation.toggleClass('active');
+  });
+
   var menuLink = $('.expanded > a'),
       menuInnerList = menuLink.siblings('ul');
 
   //Remove click event for elements with dropdown children
-  //menuLink.click(false);
+  menuLink.click(false);
+  menuLink.addClass('ololo');
 
   function menuBehaviour () {
     if ($(window).width() <= 767) {

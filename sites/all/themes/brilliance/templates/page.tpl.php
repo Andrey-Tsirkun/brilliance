@@ -38,6 +38,8 @@
 
       <?php print render($page['header']); ?>
 
+      <div class="mobileMenuButton"></div>
+
       <?php if (isset($login_button)): ?>
         <?php print $login_button; ?>
       <?php endif; ?>
@@ -56,7 +58,7 @@
 
        <div class="brilliance-slider"><?php print $slider; ?></div>
 
-       <!--<div class="brilliance-slider123">
+       <!--<div class="brilliance-slider">
           <ul>
             <li><img src="sites/all/themes/brilliance/img/1.png"></li>
             <li><img src="sites/all/themes/brilliance/img/2.png"></li>
@@ -64,7 +66,7 @@
           </ul>
           <div class="prevButton sliderButton"></div>
           <div class="nextButton sliderButton"></div>
-        </div> -->
+        </div>-->
 
         <div class="page-top-wrapper <?php /*print $page_top_regions_class;*/ ?>">
 

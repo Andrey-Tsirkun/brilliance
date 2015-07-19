@@ -1,20 +1,27 @@
 .region-navigation {
   padding: 0;
-  margin-left: 115px;
   @include transition(margin-left 0.2s);
+
+  @include breakpoint ($bpTablet) {
+    margin-left: 115px;
+  }
 }
 
 .navigation {
-  position: static;
+  display: none;
+  position: absolute;
   top: 0;
   border-bottom: solid 4px $secondColor;
   z-index: 2;
   background: $firstColor;
+  opacity: 0;
+  @include transition(opacityl 0.3s);
 
   ul {
     li {
       padding: 0;
       margin: 0;
+      list-style: none;
 
       a {
         display: block;
@@ -96,6 +103,9 @@
 
   @include breakpoint ($bpTablet) {
     width: 100%;
+    display: block;
+    opacity: 1;
+    position: static;
 
     ul {
       li {
@@ -207,6 +217,13 @@
       display: inline-block;
       opacity: 1;
     }
+  }
+
+  &.active {
+    display: block;
+    margin-top: 50px;
+    width: 100%;
+    opacity: 1;
   }
 }
 
