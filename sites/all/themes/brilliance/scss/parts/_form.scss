@@ -1,21 +1,61 @@
 form {
-  background: #333;
+  background: $firstColor;
   border-radius: 4px;
-  padding: 5px;
+  padding: 7px;
+
+  p, ol, ul, div {
+    font: normal 13px/1.3em Arial, Helvetica, sans-serif;
+    color: $secondColor;
+  }
 
   &#user-login-form {
     padding: 0;
-    border: 3px solid orange;
+    border: 3px solid $secondColor;
   }
 
   label {
-    color: orange;
+    color: $secondColor;
     font-family: $defaultFontFamily;
     padding-bottom: 3px;
   }
 
-  input {
-    outline: none
+  input[type='text'],
+  input[type='file'],
+  input[type='password'],
+  textarea,
+  select {
+    outline: none;
+    border: 3px solid $firstColor;
+    padding: 5px;
+    border-radius: 4px;
+    transition: border-color 0.1s;
+
+    &:focus {
+      border: 3px solid $secondColor;
+    }
+  }
+
+  input[type='file']{
+    margin-right: 10px;
+  }
+
+  input[type='submit'] {
+    padding: 4px 15px;
+    border: none;
+    background: #f3f3f3;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #ddd;
+    }
+  }
+
+  div.password-suggestions {
+    padding: 5px;
+    border: 3px solid $secondColor;
+    border-radius: 4px;
   }
 
   .ui-login & {
@@ -29,14 +69,6 @@ form {
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 5px;
-      border: 3px solid #333;
-      border-radius: 4px;
-      transition: border-color 0.1s;
-
-      &:focus {
-        border: 3px solid orange;
-      }
     }
 
     li {
@@ -44,11 +76,11 @@ form {
     }
 
     a {
-      color: orange;
+      color: $secondColor;
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-bottom: 1px dotted orange;
+        border-bottom: 1px dotted $secondColor;
       }
     }
 
@@ -58,16 +90,38 @@ form {
 
     input[type="submit"] {
       width: 100%;
-      padding: 4px;
-      border: none;
-      background: #f3f3f3;
-      cursor: pointer;
-      font-size: 14px;
-      border-radius: 4px;
-
-      &:hover {
-        background: #ddd;
-      }
     }
   }
+
+  /*fieldset {
+    margin: .5em 0;
+
+    &.collapsed {
+      min-height: 20px;
+      border-bottom-width: 0;
+    }
+
+    &.collapsible {
+      border:1px solid $secondColor;
+      border-radius: 4px;
+    }
+
+    legend {
+      width: 100%;
+      background-color: $secondColor;
+      font: 16px/20px normal $robotoMedium;
+      border-radius: 4px;
+    }
+
+    .fieldset-legend,
+    .fieldset-title {
+      display: inline-block;
+      width: 100%;
+      color: $firstColor;
+    }
+
+    .fieldset-wrapper {
+      padding: 5px;
+    }
+  }*/
 }

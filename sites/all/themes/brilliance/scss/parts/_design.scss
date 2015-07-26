@@ -141,7 +141,7 @@ ul.menu {
     list-style: none;
     float: left;
     display: inline-block;
-    opacity: 0;
+    //opacity: 0;
     @include transition(all 0.1s);
 
     &.active {
@@ -410,3 +410,167 @@ div.messages {
   line-height: 50px;
   text-transform: capitalize;
 }
+
+table {
+  border-radius: 4px;
+
+  th {
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    vertical-align: middle;
+    background-color: $firstColor;
+    color: $secondColor;
+
+    &:first-child {
+      border-radius: 4px 0 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 4px 0 0;
+    }
+  }
+
+  tr {
+    background: #f3f3f3;
+
+    &:last-child {
+      border-bottom: none;
+
+      td {
+        &:first-child {
+          border-radius: 0 0 0 4px;
+        }
+
+        &:last-child {
+          border-radius: 0 0 4px 0;
+        }
+      }
+    }
+  }
+
+  tr:nth-child(odd) {
+    background: #ddd;
+  }
+
+  td {
+    padding: 5px;
+    vertical-align: middle;
+  }
+}
+
+.item-list {
+  .pager {
+    &:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+    li {
+      margin: 0;
+    }
+
+    .pager-item {
+      margin: 6px 7px 0 0;
+      padding: 0;
+      display: inline-block;
+      float: left;
+      border-radius: 4px;
+      background-color: $secondColor;
+
+      a {
+        display: block;
+        min-width: 22px;
+        height: 22px;
+        color: $firstColor;
+        line-height: 24px;
+      }
+    }
+
+    .pager-current {
+      margin: 6px 7px 0 0;
+      float: left;
+      @extend .pager-item;
+      min-width: 22px;
+      height: 22px;
+      background-color: $firstColor;
+      color: $secondColor;
+      line-height: 22px;
+    }
+
+    .pager-ellipsis {
+      float: left;
+      font-weight: bold;
+      margin: 6px 7px 0 0;
+      padding: 6px 0 0 0;
+      display: inline-block;
+      min-width: 22px;
+      height: 22px;
+      color: #363636;
+      line-height: 22px;
+    }
+
+    .pager-previous {
+      float: left;
+      display: inline-block;
+
+      a {
+        display: block;
+        text-indent: -9999px;
+        @include brilliance-sprite(previous_page, $iconsOrange, $icons2xOrange);
+
+        &:hover {
+          @include brilliance-sprite(previous_page_hover, $iconsOrange, $icons2xOrange);
+        }
+      }
+    }
+
+    .pager-next {
+      @extend .pager-previous;
+
+      a {
+        display: block;
+        text-indent: -9999px;
+        @include brilliance-sprite(next_page, $iconsOrange, $icons2xOrange);
+
+        &:hover {
+          @include brilliance-sprite(next_page_hover, $iconsOrange, $icons2xOrange);
+        }
+      }
+    }
+
+    .pager-first.first {
+      @extend .pager-previous;
+
+      a {
+        display: block;
+        text-indent: -9999px;
+        @include brilliance-sprite(first_page, $iconsOrange, $icons2xOrange);
+
+        &:hover {
+          @include brilliance-sprite(first_page_hover, $iconsOrange, $icons2xOrange);
+        }
+      }
+    }
+
+    .pager-last.last {
+      @extend .pager-previous;
+
+      a {
+        display: block;
+        text-indent: -9999px;
+        @include brilliance-sprite(last_page, $iconsOrange, $icons2xOrange);
+
+        &:hover {
+          @include brilliance-sprite(last_page_hover, $iconsOrange, $icons2xOrange);
+        }
+      }
+    }
+  }
+}
+
+
+
