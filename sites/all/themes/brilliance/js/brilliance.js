@@ -1,29 +1,29 @@
 (function ($) {
-    if (Drupal.settings.navFixed) {
-      var nav = $('.navigation'),
-          logo = $('.logo'),
-          menuBlock = $('.navigation .block-menu'),
-          homeLink = '<a href="'
-              + Drupal.settings.homeLinkURL +
-              '" class="homelink" title="'
-              + Drupal.t('Home') + '">'
-              + Drupal.t('Home') + '</a>';
-          stickyRibbonTop = nav.offset().top;
-      menuBlock.before(homeLink);
-      $(window).scroll(function(){
-        if(($(window).scrollTop() > stickyRibbonTop) && $(window).width() > 768) {
-          nav.addClass('fixedNav');
-        } else {
-          nav.removeClass('fixedNav');
-        }
-        logo.css('top', -$(window).scrollTop());
-      });
-    }
+  if (Drupal.settings.navFixed) {
+    var nav = $('.navigation'),
+        logo = $('.logo'),
+        menuBlock = $('.navigation .block-menu'),
+        homeLink = '<a href="'
+            + Drupal.settings.homeLinkURL +
+            '" class="homelink" title="'
+            + Drupal.t('Home') + '">'
+            + Drupal.t('Home') + '</a>';
+    stickyRibbonTop = nav.offset().top;
+    menuBlock.before(homeLink);
+    $(window).scroll(function () {
+      if (($(window).scrollTop() > stickyRibbonTop) && $(window).width() > 768) {
+        nav.addClass('fixedNav');
+      } else {
+        nav.removeClass('fixedNav');
+      }
+      logo.css('top', -$(window).scrollTop());
+    });
+  }
 
   var mobileMenuButton = $('.mobileMenuButton'),
       navigation = $('.navigation');
 
-  mobileMenuButton.click(function() {
+  mobileMenuButton.click(function () {
     navigation.toggleClass('active');
   });
 
@@ -34,16 +34,16 @@
   menuLink.click(false);
   menuLink.addClass('ololo');
 
-  function menuBehaviour () {
+  function menuBehaviour() {
     if ($(window).width() <= 767) {
-      menuLink.click(function() {
+      menuLink.click(function () {
         $(this).toggleClass('activeUl');
         $(this).unbind('mouseenter mouseleave');
         $(this).siblings('ul').slideToggle(200);
       });
     }
     if ($(window).width() > 768) {
-      menuInnerList.hover(function() {
+      menuInnerList.hover(function () {
         $(this).siblings('a').toggleClass('activeUl');
       });
     }
@@ -51,14 +51,14 @@
 
   menuBehaviour();
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     menuBehaviour();
   });
 
   $('.brilliance-slider').brillianceSlider();
 
-  Drupal.behaviors.themeName= {
-    attach:function (context, settings) {
+  Drupal.behaviors.brilliance = {
+    attach: function (context, settings) {
 
       // Здесь указываем ID блока с логином.
       var $loginBlock = $('#block-user-login');
@@ -74,15 +74,15 @@
           show: 'fade',
           hide: 'fade',
           speed: 50,
-          open: function(){
-            $('.ui-widget-overlay').bind('click',function(){
+          open: function () {
+            $('.ui-widget-overlay').bind('click', function () {
               $loginBlock.dialog('close');
             })
           }
         });
 
         // По клику на ссылку логина - показываем попап.
-        $('.user-login', context).click(function() {
+        $('.user-login', context).click(function () {
           $loginBlock.dialog('open');
           return false;
         });

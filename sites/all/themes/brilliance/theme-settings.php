@@ -131,7 +131,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       '#type' => 'checkbox',
       '#title' => t('Autoscroll'),
       '#description' => t('Add autoscroll to Brilliance Slider'),
-      '#element_validate' => array('brilliance_images_validate'),
+      '#default_value' => theme_get_setting('slider_animation', 'brilliance'),
   );
 
   $form['#submit'][]   = 'brilliance_settings_submit';

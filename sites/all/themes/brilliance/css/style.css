@@ -372,7 +372,6 @@ ul.menu {
   list-style: none;
   float: left;
   display: inline-block;
-  opacity: 0;
   -moz-transition: all 0.1s;
   -o-transition: all 0.1s;
   -webkit-transition: all 0.1s;
@@ -631,14 +630,14 @@ div.messages {
   margin: 2px 5px;
   height: 12px;
   width: 7px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
   background-position: 0 -22px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .breadcrumb span {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
     background-position: 0 -22px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
@@ -667,15 +666,15 @@ div.messages {
   margin: 13px 8px;
   height: 24px;
   width: 30px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -262px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -350px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .mobileMenuButton {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -250px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -338px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -697,8 +696,8 @@ div.messages {
   text-indent: -9999px;
   height: 34px;
   width: 28px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -228px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -316px;
   background-repeat: no-repeat;
   /*@include breakpoint ($bpTablet) {
     float: none;
@@ -710,8 +709,8 @@ div.messages {
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .user-login {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -216px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -304px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -723,6 +722,270 @@ div.messages {
 #site-name {
   line-height: 50px;
   text-transform: capitalize;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003414}}
+table {
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003417}}
+table th {
+  padding: 5px;
+  text-align: center;
+  text-transform: capitalize;
+  vertical-align: middle;
+  background-color: #363636;
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003425}}
+table th:first-child {
+  border-radius: 4px 0 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003429}}
+table th:last-child {
+  border-radius: 0 4px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003434}}
+table tr {
+  background: #f3f3f3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003437}}
+table tr:last-child {
+  border-bottom: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003441}}
+table tr:last-child td:first-child {
+  border-radius: 0 0 0 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003445}}
+table tr:last-child td:last-child {
+  border-radius: 0 0 4px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003452}}
+table tr:nth-child(odd) {
+  background: #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003456}}
+table td {
+  padding: 5px;
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003464}}
+.item-list .pager:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003472}}
+.item-list .pager li {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003476}}
+.item-list .pager .pager-item, .item-list .pager .pager-current {
+  margin: 6px 7px 0 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  border-radius: 4px;
+  background-color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003484}}
+.item-list .pager .pager-item a, .item-list .pager .pager-current a {
+  display: block;
+  min-width: 22px;
+  height: 22px;
+  color: #363636;
+  line-height: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003493}}
+.item-list .pager .pager-current {
+  margin: 6px 7px 0 0;
+  float: left;
+  min-width: 22px;
+  height: 22px;
+  background-color: #363636;
+  color: orange;
+  line-height: 22px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003504}}
+.item-list .pager .pager-ellipsis {
+  float: left;
+  font-weight: bold;
+  margin: 6px 7px 0 0;
+  padding: 6px 0 0 0;
+  display: inline-block;
+  min-width: 22px;
+  height: 22px;
+  color: #363636;
+  line-height: 22px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003516}}
+.item-list .pager .pager-previous, .item-list .pager .pager-next, .item-list .pager .pager-first.first, .item-list .pager .pager-last.last {
+  float: left;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003520}}
+.item-list .pager .pager-previous a, .item-list .pager .pager-next a, .item-list .pager .pager-first.first a, .item-list .pager .pager-last.last a {
+  display: block;
+  text-indent: -9999px;
+  height: 22px;
+  width: 14px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -472px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-previous a, .item-list .pager .pager-next a, .item-list .pager .pager-first.first a, .item-list .pager .pager-last.last a {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -460px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003525}}
+.item-list .pager .pager-previous a:hover, .item-list .pager .pager-next a:hover, .item-list .pager .pager-first.first a:hover, .item-list .pager .pager-last.last a:hover {
+  height: 22px;
+  width: 14px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -494px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-previous a:hover, .item-list .pager .pager-next a:hover, .item-list .pager .pager-first.first a:hover, .item-list .pager .pager-last.last a:hover {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -482px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003534}}
+.item-list .pager .pager-next a {
+  display: block;
+  text-indent: -9999px;
+  height: 22px;
+  width: 14px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -374px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-next a {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -362px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003539}}
+.item-list .pager .pager-next a:hover {
+  height: 22px;
+  width: 14px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -396px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-next a:hover {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -384px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003548}}
+.item-list .pager .pager-first.first a {
+  display: block;
+  text-indent: -9999px;
+  height: 22px;
+  width: 24px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -100px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-first.first a {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -100px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003553}}
+.item-list .pager .pager-first.first a:hover {
+  height: 22px;
+  width: 24px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -122px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-first.first a:hover {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -122px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003562}}
+.item-list .pager .pager-last.last a {
+  display: block;
+  text-indent: -9999px;
+  height: 22px;
+  width: 24px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -240px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-last.last a {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -228px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_design\.scss}line{font-family:\00003567}}
+.item-list .pager .pager-last.last a:hover {
+  height: 22px;
+  width: 24px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -262px;
+  background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
+  .item-list .pager .pager-last.last a:hover {
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -250px;
+    -moz-background-size: 34px, auto;
+    -o-background-size: 34px, auto;
+    -webkit-background-size: 34px, auto;
+    background-size: 34px, auto;
+  }
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\000031}}
@@ -922,8 +1185,8 @@ div.messages {
   float: left;
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -132px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -176px;
   background-repeat: no-repeat;
   opacity: 0;
   -moz-transition: opacity 0.2s;
@@ -934,8 +1197,8 @@ div.messages {
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .navigation .homelink {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -132px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -176px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1008,14 +1271,14 @@ div.messages {
 .facebook-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
   background-position: 0 -68px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .facebook-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
     background-position: 0 -68px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
@@ -1028,15 +1291,15 @@ div.messages {
 .twitter-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -340px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -516px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .twitter-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -328px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -504px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1048,15 +1311,15 @@ div.messages {
 .youtube-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -372px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -548px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .youtube-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -360px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -536px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1068,15 +1331,15 @@ div.messages {
 .googleplus-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -100px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -144px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .googleplus-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -100px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -144px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1088,15 +1351,15 @@ div.messages {
 .pinterest-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -286px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -418px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .pinterest-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -274px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -406px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1108,15 +1371,15 @@ div.messages {
 .linkedin-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -196px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -284px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .linkedin-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -184px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -272px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1128,15 +1391,15 @@ div.messages {
 .instagram-icon {
   height: 32px;
   width: 32px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -164px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -208px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .instagram-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -152px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -196px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1172,14 +1435,14 @@ div.messages {
   text-indent: -9999px;
   height: 22px;
   width: 22px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .nodeSubmitted {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
     background-position: 0 0;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
@@ -1194,15 +1457,15 @@ div.messages {
   text-indent: -9999px;
   height: 22px;
   width: 22px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
-  background-position: 0 -318px;
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
+  background-position: 0 -450px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .onNode {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
-    background-position: 0 -306px;
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
+    background-position: 0 -438px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
     -webkit-background-size: 34px, auto;
@@ -1336,76 +1599,132 @@ div.messages {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\000031}}
 form {
-  background: #333;
+  background: #363636;
   border-radius: 4px;
-  padding: 5px;
+  padding: 7px;
+  /*fieldset {
+    margin: .5em 0;
+
+    &.collapsed {
+      min-height: 20px;
+      border-bottom-width: 0;
+    }
+
+    &.collapsible {
+      border:1px solid $secondColor;
+      border-radius: 4px;
+    }
+
+    legend {
+      width: 100%;
+      background-color: $secondColor;
+      font: 16px/20px normal $robotoMedium;
+      border-radius: 4px;
+    }
+
+    .fieldset-legend,
+    .fieldset-title {
+      display: inline-block;
+      width: 100%;
+      color: $firstColor;
+    }
+
+    .fieldset-wrapper {
+      padding: 5px;
+    }
+  }*/
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\000036}}
+form p, form ol, form ul, form div {
+  font: normal 13px/1.3em Arial, Helvetica, sans-serif;
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000311}}
 form#user-login-form {
   padding: 0;
   border: 3px solid orange;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000316}}
 form label {
   color: orange;
   font-family: Arial, Helvetica, sans-serif;
   padding-bottom: 3px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000317}}
-form input {
-  outline: none;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000322}}
-.ui-login form .form-item,
-.ui-login form .item-list,
-.ui-login form .form-actions {
-  margin: 13px auto 13px;
-  width: 200px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000329}}
-.ui-login form input[type="text"],
-.ui-login form input[type="password"] {
-  width: 100%;
+form input[type='text'],
+form input[type='file'],
+form input[type='password'],
+form textarea,
+form select {
+  outline: none;
+  border: 3px solid #363636;
   padding: 5px;
-  border: 3px solid #333;
   border-radius: 4px;
   transition: border-color 0.1s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000337}}
-.ui-login form input[type="text"]:focus,
-.ui-login form input[type="password"]:focus {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000333}}
+form input[type='text']:focus,
+form input[type='file']:focus,
+form input[type='password']:focus,
+form textarea:focus,
+form select:focus {
   border: 3px solid orange;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000338}}
+form input[type='file'] {
+  margin-right: 10px;
+}
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000342}}
-.ui-login form li {
-  margin: 0;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000346}}
-.ui-login form a {
-  color: orange;
-  border-bottom: 1px solid transparent;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000350}}
-.ui-login form a:hover {
-  border-bottom: 1px dotted orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000355}}
-.ui-login form .form-actions {
-  margin-bottom: 16px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000359}}
-.ui-login form input[type="submit"] {
-  width: 100%;
-  padding: 4px;
+form input[type='submit'] {
+  padding: 4px 15px;
   border: none;
   background: #f3f3f3;
   cursor: pointer;
   font-size: 14px;
   border-radius: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000368}}
-.ui-login form input[type="submit"]:hover {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000350}}
+form input[type='submit']:hover {
   background: #ddd;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000355}}
+form div.password-suggestions {
+  padding: 5px;
+  border: 3px solid orange;
+  border-radius: 4px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000362}}
+.ui-login form .form-item,
+.ui-login form .item-list,
+.ui-login form .form-actions {
+  margin: 13px auto 13px;
+  width: 200px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000369}}
+.ui-login form input[type="text"],
+.ui-login form input[type="password"] {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000374}}
+.ui-login form li {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000378}}
+.ui-login form a {
+  color: orange;
+  border-bottom: 1px solid transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000382}}
+.ui-login form a:hover {
+  border-bottom: 1px dotted orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000387}}
+.ui-login form .form-actions {
+  margin-bottom: 16px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_form\.scss}line{font-family:\0000391}}
+.ui-login form input[type="submit"] {
+  width: 100%;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_block\.scss}line{font-family:\000031}}
@@ -1430,14 +1749,14 @@ form input {
   height: 34px;
   height: 34px;
   width: 34px;
-  background-image: url('../img/sprite/icons-orange-s71e187c4f7.png');
+  background-image: url('../img/sprite/icons-orange-sd80564157f.png');
   background-position: 0 -34px;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5) {
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_sprites\.scss}line{font-family:\0000332}}
   .ui-login .ui-widget-header .ui-icon {
-    background-image: url('../img/sprite/icons2x-orange-s0f9e48baa8.png');
+    background-image: url('../img/sprite/icons2x-orange-sc5cb77a4a2.png');
     background-position: 0 -34px;
     -moz-background-size: 34px, auto;
     -o-background-size: 34px, auto;
