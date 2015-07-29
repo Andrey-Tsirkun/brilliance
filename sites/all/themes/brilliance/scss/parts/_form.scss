@@ -1,20 +1,20 @@
 form {
-  background: $firstColor;
+  //--background: $firstColor;
   border-radius: 4px;
   padding: 7px;
 
   p, ol, ul, div {
     font: normal 13px/1.3em Arial, Helvetica, sans-serif;
-    color: $secondColor;
+    //--color: $secondColor;
   }
 
   &#user-login-form {
     padding: 0;
-    border: 3px solid $secondColor;
+    //--border: 3px solid $secondColor;
   }
 
   label {
-    color: $secondColor;
+    //--color: $secondColor;
     font-family: $defaultFontFamily;
     padding-bottom: 3px;
   }
@@ -25,13 +25,14 @@ form {
   textarea,
   select {
     outline: none;
-    border: 3px solid $firstColor;
+    //--border: 3px solid $firstColor;
     padding: 5px;
     border-radius: 4px;
     transition: border-color 0.1s;
+    //--color: $firstColor;
 
     &:focus {
-      border: 3px solid $secondColor;
+      //--border: 3px solid $secondColor;
     }
   }
 
@@ -46,6 +47,7 @@ form {
     cursor: pointer;
     font-size: 14px;
     border-radius: 4px;
+    //--color: $firstColor;
 
     &:hover {
       background: #ddd;
@@ -54,7 +56,7 @@ form {
 
   div.password-suggestions {
     padding: 5px;
-    border: 3px solid $secondColor;
+    //--border: 3px solid $secondColor;
     border-radius: 4px;
   }
 
@@ -76,11 +78,11 @@ form {
     }
 
     a {
-      color: $secondColor;
+      //--color: $secondColor;
       border-bottom: 1px solid transparent;
 
       &:hover {
-        border-bottom: 1px dotted $secondColor;
+        //--border-bottom: 1px dotted $secondColor;
       }
     }
 

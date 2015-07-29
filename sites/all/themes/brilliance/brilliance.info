@@ -28,6 +28,7 @@ settings[menu_state] = FALSE
 settings['brilliance_slider']['slides_count'] = 2
 settings['slider_animation'] = FALSE;
 settings['footer_social_icons'][social_icons] = FALSE
+settings['footer_social_icons'][fb_url] = 0
 settings['footer_social_icons'][fb_url] = 'https://www.facebook.com/'
 settings['footer_social_icons'][twitter_url] = 'https://www.twitter.com/'
 settings['footer_social_icons'][youtube_url] = 'https://youtube.com/'

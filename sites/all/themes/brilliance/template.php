@@ -178,6 +178,14 @@ function brilliance_preprocess_html(&$vars) {
     ),
   );
   drupal_add_html_head($viewport, 'viewport');
+
+  $color_schema = theme_get_setting('color_scheme_radio', 'brilliance');
+  if($color_schema == 0) {
+    drupal_add_css(drupal_get_path('theme','brilliance').'/css/parts/orange.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 4));
+  }
+  else if ($color_schema == 1) {
+    $vars['classes_array'][] = 'green';
+  }
 }
 
 /**
@@ -225,4 +233,9 @@ function brilliance_breadcrumb($variables) {
     $output .= '<div class="breadcrumb">' . implode('<span></span>', $breadcrumb) . '</div>';
     return $output;
   }
+}
+
+function brilliance_style() {
+  $style = theme_get_setting('style');
+  return $style;
 }

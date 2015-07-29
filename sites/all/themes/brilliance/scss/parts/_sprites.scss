@@ -2,6 +2,8 @@
 //$buttons: sprite-map("sprite/buttons/*.png", $layout: vertical);
 //$buttons2x: sprite-map("sprite/buttons2x/*.png", $layout: vertical);
 
+$iconsGlobal: sprite-map("sprite/global/*.png", $layout: vertical);
+$icons2xGlobal: sprite-map("sprite/global2x/*.png", $layout: vertical);
 $iconsOrange: sprite-map("sprite/icons-orange/*.png", $layout: vertical);
 $icons2xOrange: sprite-map("sprite/icons2x-orange/*.png", $layout: vertical);
 
