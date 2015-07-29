@@ -15,6 +15,19 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       '#collapsible' => FALSE,
       '#collapsed' => FALSE,
   );
+  $form['brilliance_settings']['color_scheme'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Brilliance Color Scheme'),
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+  );
+  $form['brilliance_settings']['color_scheme']['color_scheme_radio'] = array(
+      '#type' => 'radios',
+      '#title' => t('Choose color scheme.'),
+      '#options' => array(t('Orange'), t('Green')),
+      '#description' => t(''),
+      '#default_value' => theme_get_setting('color_scheme_radio', 'brilliance'),
+  );
   $form['brilliance_settings']['menu_state'] = array(
       '#type' => 'checkbox',
       '#title' => t('Menu state'),
@@ -93,7 +106,6 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
       '#collapsed' => FALSE,
   );
 
-  // Image upload section ======================================================
   $banners = brilliance_get_banners_tpl();
 
   $form['brilliance_settings']['brilliance_slider']['slide']['images'] = array(

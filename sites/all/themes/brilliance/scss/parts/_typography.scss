@@ -88,6 +88,14 @@ h1.title {
 }
 
 a {
-  color: $linkColor;
+  color: #ffa500;
   text-decoration: none;
+}
+
+li {
+  a {
+    &.active {
+      color: #ffa500;
+    }
+  }
 }
