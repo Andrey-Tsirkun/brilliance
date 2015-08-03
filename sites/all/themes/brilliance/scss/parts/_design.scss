@@ -96,6 +96,7 @@ html, body {
 
 ul.menu {
   margin: 0;
+  padding: 0;
 }
 
 #content {
@@ -361,7 +362,7 @@ div.messages {
     display: inline-block;
     float: left;
     margin: 2px 5px;
-    @include brilliance-sprite(breadcrumb-separator, $iconsOrange, $icons2xOrange);
+    //--@include brilliance-sprite(breadcrumb-separator, $iconsOrange, $icons2xOrange);
   }
 }
 

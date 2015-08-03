@@ -1,0 +1,167 @@
+@import 'breakpoint';
+
+$firstColor: #6fcc50;
+$secondColor: #ffec00;
+$hoverMenuBG: #fff;
+$subMenuBG: #64b94a;
+$bpTablet: 768px;
+$bpDesktop: 1025px;
+
+table {
+  th {
+    background-color: $firstColor;
+    color: $secondColor;
+  }
+
+  a {
+    color: $firstColor;
+  }
+}
+
+.item-list {
+  .pager {
+    .pager-item {
+      background-color: $secondColor;
+
+      a {
+        color: $firstColor;
+      }
+    }
+
+    .pager-current {
+      background-color: $firstColor;
+      color: $secondColor;
+    }
+  }
+}
+
+form {
+  background: $firstColor;
+
+  p, ol, ul, div {
+    color: $secondColor;
+  }
+
+  &#user-login-form {
+    border: 3px solid $secondColor;
+  }
+
+  label {
+    color: $secondColor;
+  }
+
+  input[type='text'],
+  input[type='file'],
+  input[type='password'],
+  textarea,
+  select {
+    border: 3px solid $firstColor;
+    color: $firstColor;
+
+    &:focus {
+      border: 3px solid $secondColor;
+    }
+  }
+
+  input[type='submit'] {
+    color: $firstColor;
+  }
+
+  div.password-suggestions {
+    border: 3px solid $secondColor;
+  }
+
+  .ui-login & {
+    a {
+      color: $secondColor;
+
+      &:hover {
+        border-bottom: 1px dotted $secondColor;
+      }
+    }
+  }
+}
+
+.navigation {
+  border-bottom: solid 4px $secondColor;
+  background: $firstColor;
+
+  ul {
+    li {
+      a {
+        color: $hoverMenuBG;
+        background: $firstColor;
+      }
+
+      ul {
+        background: $subMenuBG;
+      }
+    }
+  }
+
+  .expanded {
+    & > a {
+      &:after {
+        border-color: transparent transparent transparent $hoverMenuBG;
+      }
+
+      &:hover,
+      &.activeUl {
+        &:after {
+          border-color: transparent transparent transparent $firstColor;
+        }
+      }
+    }
+  }
+
+  .activeUl {
+    background: $hoverMenuBG;
+    color: $firstColor;
+  }
+
+  @include breakpoint ($bpTablet) {
+    ul {
+      li {
+        a {
+          &:hover,
+          &.activeUl {
+            background: $hoverMenuBG;
+            color: $firstColor;
+          }
+        }
+      }
+    }
+  }
+}
+
+.comment-wrapper {
+  .submitted {
+    background: none repeat scroll 0 0 $firstColor;
+  }
+}
+
+.comment {
+  border-left: 1px solid $firstColor;
+
+  .new {
+    background: none repeat scroll 0 0 $firstColor;
+  }
+}
+
+.footer {
+  background: $firstColor;
+}
+
+/*.ui-login {
+  .ui-widget-header {
+    .ui-icon {
+      @include brilliance-sprite(close_gray, $iconsGreen, $icons2xGreen);
+    }
+  }
+}
+
+.breadcrumb {
+  span {
+    @include brilliance-sprite(breadcrumb-separator, $iconsGreen, $icons2xGreen);
+  }
+}*/

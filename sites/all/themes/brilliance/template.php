@@ -181,10 +181,10 @@ function brilliance_preprocess_html(&$vars) {
 
   $color_schema = theme_get_setting('color_scheme_radio', 'brilliance');
   if($color_schema == 0) {
-    drupal_add_css(drupal_get_path('theme','brilliance').'/css/parts/orange.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 4));
+    drupal_add_css(drupal_get_path('theme','brilliance').'/css/orange.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 4));
   }
   else if ($color_schema == 1) {
-    $vars['classes_array'][] = 'green';
+    drupal_add_css(drupal_get_path('theme','brilliance').'/css/green.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'weight' => 4));
   }
 }
 
