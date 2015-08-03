@@ -1,0 +1,127 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000311}}
+table th {
+  background-color: #363636;
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000316}}
+table a {
+  color: #363636;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000323}}
+.item-list .pager .pager-item {
+  background-color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000326}}
+.item-list .pager .pager-item a {
+  color: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000331}}
+.item-list .pager .pager-current {
+  background-color: #363636;
+  color: orange;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000338}}
+form {
+  background: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000341}}
+form p, form ol, form ul, form div {
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000345}}
+form#user-login-form {
+  border: 3px solid orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000349}}
+form label {
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000353}}
+form input[type='text'],
+form input[type='file'],
+form input[type='password'],
+form textarea,
+form select {
+  border: 3px solid #363636;
+  color: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000361}}
+form input[type='text']:focus,
+form input[type='file']:focus,
+form input[type='password']:focus,
+form textarea:focus,
+form select:focus {
+  border: 3px solid orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000366}}
+form input[type='submit'] {
+  color: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000370}}
+form div.password-suggestions {
+  border: 3px solid orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000375}}
+.ui-login form a {
+  color: orange;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000378}}
+.ui-login form a:hover {
+  border-bottom: 1px dotted orange;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000385}}
+.navigation {
+  border-bottom: solid 4px orange;
+  background: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000391}}
+.navigation ul li a {
+  color: white;
+  background: #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000396}}
+.navigation ul li ul {
+  background: #64b94a;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003104}}
+.navigation .expanded > a:after {
+  border-color: transparent transparent transparent white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003110}}
+.navigation .expanded > a:hover:after, .navigation .expanded > a.activeUl:after {
+  border-color: transparent transparent transparent #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003117}}
+.navigation .activeUl {
+  background: white;
+  color: #363636;
+}
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003126}}
+  .navigation ul li a:hover, .navigation ul li a.activeUl {
+    background: white;
+    color: #363636;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003138}}
+.comment-wrapper .submitted {
+  background: none repeat scroll 0 0 #363636;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003143}}
+.comment {
+  border-left: 1px solid #363636;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003146}}
+.comment .new {
+  background: none repeat scroll 0 0 #363636;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003151}}
+.footer {
+  background: #363636;
+}
