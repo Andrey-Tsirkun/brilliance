@@ -121,7 +121,7 @@ function brilliance_form_system_theme_settings_alter(&$form, &$form_state) {
   foreach ($banners as $image_data) {
     $form['brilliance_settings']['brilliance_slider']['slide']['images'][$i] = array(
         '#type' => 'fieldset',
-        '#title' => t('Image !number', array('!number' => $i + 1)),
+        '#title' => t('Slide !number', array('!number' => $i + 1)),
         '#weight' => $i,
         '#collapsible' => TRUE,
         '#collapsed' => FALSE,
@@ -249,9 +249,9 @@ function _brilliance_banner_form($image_data) {
   );
 
   // Delete image.
-  $img_form['image_delete'] = array(
+  $img_form['slide_delete'] = array(
       '#type' => 'checkbox',
-      '#title' => t('Delete image.'),
+      '#title' => t('Delete slide.'),
       '#default_value' => FALSE,
   );
 
@@ -278,7 +278,7 @@ function brilliance_settings_submit($form, &$form_state) {
     if (is_array($image)) {
       $image = $image['image'];
 
-      if ($image['image_delete']) {
+      if ($image['slide_delete']) {
         // Delete banner file
         file_unmanaged_delete($image['image_path']);
         // Delete banner thumbnail file
