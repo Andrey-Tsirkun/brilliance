@@ -1809,12 +1809,17 @@ div.error .message-image {
 .social-section {
   padding: 10px;
   height: 52px;
+  text-align: center;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003235}}
+.social-section .item-list {
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003238}}
 .social-section .item-list ul {
   height: 32px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003238}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003241}}
 .social-section .item-list ul li {
   margin: 0 10px 0 0;
   -moz-transition: all 0.1s;
@@ -1822,29 +1827,35 @@ div.error .message-image {
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003245}}
 .social-section .item-list ul li.last {
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003249}}
 .social-section .item-list ul li:hover {
   height: 42px;
   margin-top: -10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003254}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003257}}
 .social-section li {
   display: inline-block;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003259}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003262}}
 .social-section a {
   display: block;
   width: 32px;
   height: 32px;
   text-indent: -9999px;
 }
+@media (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003230}}
+  .social-section {
+    text-align: inherit;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003274}}
 .facebook-icon {
   height: 32px;
   width: 32px;
@@ -1864,7 +1875,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003278}}
 .twitter-icon {
   height: 32px;
   width: 32px;
@@ -1884,7 +1895,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003282}}
 .youtube-icon {
   height: 32px;
   width: 32px;
@@ -1904,7 +1915,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003286}}
 .googleplus-icon {
   height: 32px;
   width: 32px;
@@ -1924,7 +1935,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003283}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003290}}
 .pinterest-icon {
   height: 32px;
   width: 32px;
@@ -1944,7 +1955,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003294}}
 .linkedin-icon {
   height: 32px;
   width: 32px;
@@ -1964,7 +1975,7 @@ div.error .message-image {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/parts\/_menu\.scss}line{font-family:\00003298}}
 .instagram-icon {
   height: 32px;
   width: 32px;

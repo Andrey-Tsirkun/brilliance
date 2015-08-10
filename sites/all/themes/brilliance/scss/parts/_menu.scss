@@ -230,8 +230,11 @@
 .social-section {
   padding: 10px;
   height: 52px;
+  text-align: center;
 
   .item-list {
+    display: inline-block;
+
     ul {
       height: 32px;
 
@@ -261,6 +264,10 @@
     width: 32px;
     height: 32px;
     text-indent: -9999px;
+  }
+
+  @include breakpoint ($bpTablet) {
+    text-align: inherit;
   }
 }
 
