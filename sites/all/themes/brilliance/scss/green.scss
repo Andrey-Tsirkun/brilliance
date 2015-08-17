@@ -1,11 +1,18 @@
 @import 'breakpoint';
+@import 'compass/utilities/sprites';
+@import 'parts/sprites';
+@import 'compass/css3/background-size';
 
 $firstColor: #6fcc50;
 $secondColor: #ffec00;
-$hoverMenuBG: #fff;
-$subMenuBG: #64b94a;
+$hoverMenuBG: #64b94a;
+$subMenuBG: #68bf4c;
 $bpTablet: 768px;
 $bpDesktop: 1025px;
+
+.header {
+  background: $firstColor;
+}
 
 table {
   th {
@@ -84,17 +91,31 @@ form {
 
 .navigation {
   border-bottom: solid 4px $secondColor;
-  background: $firstColor;
+  background: $subMenuBG;
 
   ul {
     li {
       a {
-        color: $hoverMenuBG;
-        background: $firstColor;
+        color: #fff;
+        background: $subMenuBG;
+
+        &:hover {
+          background: $hoverMenuBG;
+          color: #fff;
+        }
+
       }
 
       ul {
-        background: $subMenuBG;
+        background: $hoverMenuBG;
+
+        a {
+          background: $hoverMenuBG;
+
+          &:hover {
+            background: $subMenuBG;
+          }
+        }
       }
     }
   }
@@ -102,13 +123,13 @@ form {
   .expanded {
     & > a {
       &:after {
-        border-color: transparent transparent transparent $hoverMenuBG;
+        border-color: transparent transparent transparent #fff;
       }
 
       &:hover,
       &.activeUl {
         &:after {
-          border-color: transparent transparent transparent $firstColor;
+          border-color: transparent transparent transparent #fff;
         }
       }
     }
@@ -125,12 +146,16 @@ form {
         a {
           &:hover,
           &.activeUl {
-            background: $hoverMenuBG;
-            color: $firstColor;
+            background: $subMenuBG;
+            color: #fff;
           }
         }
       }
     }
+  }
+
+  .homelink {
+    @include brilliance-sprite(home, $iconsGreen, $icons2xGreen);
   }
 }
 
@@ -152,16 +177,42 @@ form {
   background: $firstColor;
 }
 
-/*.ui-login {
-  .ui-widget-header {
-    .ui-icon {
-      @include brilliance-sprite(close_gray, $iconsGreen, $icons2xGreen);
-    }
-  }
+a {
+  color: $secondColor;
 }
 
-.breadcrumb {
-  span {
-    @include brilliance-sprite(breadcrumb-separator, $iconsGreen, $icons2xGreen);
-  }
-}*/
+.facebook-icon {
+  @include brilliance-sprite(facebook-icon, $iconsGreen, $icons2xGreen);
+}
+
+.twitter-icon {
+  @include brilliance-sprite(twitter-icon, $iconsGreen, $icons2xGreen);
+}
+
+.youtube-icon {
+  @include brilliance-sprite(youtube-icon, $iconsGreen, $icons2xGreen);
+}
+
+.googleplus-icon {
+  @include brilliance-sprite(googleplus-icon, $iconsGreen, $icons2xGreen);
+}
+
+.pinterest-icon {
+  @include brilliance-sprite(pinterest-icon, $iconsGreen, $icons2xGreen);
+}
+
+.linkedin-icon {
+  @include brilliance-sprite(linkedin-icon, $iconsGreen, $icons2xGreen);
+}
+
+.instagram-icon {
+  @include brilliance-sprite(instagram-icon, $iconsGreen, $icons2xGreen);
+}
+
+.user-login {
+  @include brilliance-sprite(login, $iconsGreen, $icons2xGreen);
+}
+
+.mobileMenuButton {
+  @include brilliance-sprite(mobile-menu-button, $iconsGreen, $icons2xGreen);
+}

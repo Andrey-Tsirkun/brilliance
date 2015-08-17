@@ -1,127 +1,84 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000311}}
-table th {
-  background-color: #363636;
-  color: orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000316}}
-table a {
-  color: #363636;
-}
+/*
+Syntax error: Undefined mixin 'brilliance-sprite'.
+        on line 141 of D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss, in `brilliance-sprite'
+        from line 141 of D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000323}}
-.item-list .pager .pager-item {
-  background-color: orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000326}}
-.item-list .pager .pager-item a {
-  color: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000331}}
-.item-list .pager .pager-current {
-  background-color: #363636;
-  color: orange;
-}
+136:       }
+137:     }
+138:   }
+139: 
+140:   .homelink {
+141:     @include brilliance-sprite(home, $iconsOrange, $icons2xOrange);
+142:   }
+143: }
+144: 
+145: .comment-wrapper {
+146:   .submitted {
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000338}}
-form {
-  background: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000341}}
-form p, form ol, form ul, form div {
-  color: orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000345}}
-form#user-login-form {
-  border: 3px solid orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000349}}
-form label {
-  color: orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000353}}
-form input[type='text'],
-form input[type='file'],
-form input[type='password'],
-form textarea,
-form select {
-  border: 3px solid #363636;
-  color: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000361}}
-form input[type='text']:focus,
-form input[type='file']:focus,
-form input[type='password']:focus,
-form textarea:focus,
-form select:focus {
-  border: 3px solid orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000366}}
-form input[type='submit'] {
-  color: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000370}}
-form div.password-suggestions {
-  border: 3px solid orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000375}}
-.ui-login form a {
-  color: orange;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000378}}
-.ui-login form a:hover {
-  border-bottom: 1px dotted orange;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000385}}
-.navigation {
-  border-bottom: solid 4px orange;
-  background: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000391}}
-.navigation ul li a {
-  color: white;
-  background: #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\0000396}}
-.navigation ul li ul {
-  background: #64b94a;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003104}}
-.navigation .expanded > a:after {
-  border-color: transparent transparent transparent white;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003110}}
-.navigation .expanded > a:hover:after, .navigation .expanded > a.activeUl:after {
-  border-color: transparent transparent transparent #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003117}}
-.navigation .activeUl {
-  background: white;
-  color: #363636;
-}
-@media (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003126}}
-  .navigation ul li a:hover, .navigation ul li a.activeUl {
-    background: white;
-    color: #363636;
-  }
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003138}}
-.comment-wrapper .submitted {
-  background: none repeat scroll 0 0 #363636;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003143}}
-.comment {
-  border-left: 1px solid #363636;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003146}}
-.comment .new {
-  background: none repeat scroll 0 0 #363636;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/OpenServer\/domains\/brilliance\/sites\/all\/themes\/brilliance\/scss\/orange\.scss}line{font-family:\00003151}}
-.footer {
-  background: #363636;
-}
+Backtrace:
+D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss:141:in `brilliance-sprite'
+D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss:141
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/engine.rb:274:in `render'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:462:in `on_file_changed'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:324:in `block in watch'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.3.14/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'brilliance-sprite'.\A         on line 141 of D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss, in `brilliance-sprite'\A         from line 141 of D:/OpenServer/domains/brilliance/sites/all/themes/brilliance/scss/orange.scss\A \A 136:       }\A 137:     }\A 138:   }\A 139: \A 140:   .homelink {\A 141:     @include brilliance-sprite(home, $iconsOrange, $icons2xOrange);\A 142:   }\A 143: }\A 144: \A 145: .comment-wrapper {\A 146:   .submitted {"; }

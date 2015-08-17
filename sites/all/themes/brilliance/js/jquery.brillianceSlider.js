@@ -9,18 +9,18 @@
             nextButton = $('.nextButton'),
             maxWidth = 1140;
 
-
+        console.warn(11 + ' ' + sliderItemWidth);
 
         var make = function () {
-
-
           if($(window).width() < maxWidth) {
+            console.warn(1 + ' ' + sliderItemWidth);
             var windowWidth = $(window).width();
             sliderItemWidth = windowWidth;
             sliderItem.find('a').width(windowWidth);
             sliderWrap.width(sliderItem.size() * windowWidth).css({'left': -windowWidth + 'px'});
           }
           else {
+            console.warn(2 + ' ' + sliderItemWidth);
             sliderWrap.width(sliderItem.size() * sliderItemWidth).css({'left': -sliderItemWidth + 'px'});
           }
 
