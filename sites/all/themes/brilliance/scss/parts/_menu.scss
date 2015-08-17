@@ -199,7 +199,7 @@
     display: none;
     text-indent: -9999px;
     float: left;
-    @include brilliance-sprite(home, $iconsOrange, $icons2xOrange);
+    //--@include brilliance-sprite(home, $iconsOrange, $icons2xOrange);
     opacity: 0;
     @include transition(opacity 0.2s);
   }
@@ -271,7 +271,7 @@
   }
 }
 
-.facebook-icon {
+/*.facebook-icon {
   @include brilliance-sprite(facebook-icon, $iconsOrange, $icons2xOrange);
 }
 
@@ -297,4 +297,4 @@
 
 .instagram-icon {
   @include brilliance-sprite(instagram-icon, $iconsOrange, $icons2xOrange);
-}
+}*/

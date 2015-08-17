@@ -3,9 +3,13 @@
 $firstColor: #363636;
 $secondColor: #ffa500;
 $hoverMenuBG: #fff;
-$subMenuBG: #64b94a;
+$subMenuBG: #232323;
 $bpTablet: 768px;
 $bpDesktop: 1025px;
+
+.header {
+  background: #232323;
+}
 
 table {
   th {
@@ -132,6 +136,10 @@ form {
       }
     }
   }
+
+  .homelink {
+    @include brilliance-sprite(home, $iconsOrange, $icons2xOrange);
+  }
 }
 
 .comment-wrapper {
@@ -150,4 +158,44 @@ form {
 
 .footer {
   background: $firstColor;
+}
+
+a {
+  color: $secondColor;
+}
+
+.facebook-icon {
+  @include brilliance-sprite(facebook-icon, $iconsOrange, $icons2xOrange);
+}
+
+.twitter-icon {
+  @include brilliance-sprite(twitter-icon, $iconsOrange, $icons2xOrange);
+}
+
+.youtube-icon {
+  @include brilliance-sprite(youtube-icon, $iconsOrange, $icons2xOrange);
+}
+
+.googleplus-icon {
+  @include brilliance-sprite(googleplus-icon, $iconsOrange, $icons2xOrange);
+}
+
+.pinterest-icon {
+  @include brilliance-sprite(pinterest-icon, $iconsOrange, $icons2xOrange);
+}
+
+.linkedin-icon {
+  @include brilliance-sprite(linkedin-icon, $iconsOrange, $icons2xOrange);
+}
+
+.instagram-icon {
+  @include brilliance-sprite(instagram-icon, $iconsOrange, $icons2xOrange);
+}
+
+.user-login {
+  @include brilliance-sprite(login, $iconsOrange, $icons2xOrange);
+}
+
+.mobileMenuButton {
+  @include brilliance-sprite(mobile-menu-button, $iconsOrange, $icons2xOrange);
 }

@@ -89,7 +89,7 @@ h1.title {
 }
 
 a {
-  color: #ffa500;
+  //-color: #ffa500;
   text-decoration: none;
 }
 
@@ -99,4 +99,8 @@ li {
       color: #ffa500;
     }
   }
+}
+
+p {
+  margin: 10px 0 0;
 }

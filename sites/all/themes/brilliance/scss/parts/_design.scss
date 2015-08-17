@@ -12,7 +12,7 @@ html, body {
 }
 
 .header {
-  background: #232323;
+  //--background: #232323;
   height: 50px;
 
   .centered {
@@ -137,7 +137,7 @@ ul.menu {
     list-style: none;
     float: left;
     display: inline-block;
-    //opacity: 0;
+    opacity: 0;
     @include transition(all 0.1s);
 
     &.active {
@@ -161,7 +161,7 @@ ul.menu {
     height: 300px;
     position: relative;
     overflow: hidden;
-    background-color: #000;
+    background-color: #ccc;
 
     li {
       margin: 0;
@@ -380,7 +380,7 @@ div.messages {
   display: inline-block;
   float: left;
   margin: 13px 8px;
-  @include brilliance-sprite(mobile-menu-button, $iconsOrange, $icons2xOrange);
+  //--@include brilliance-sprite(mobile-menu-button, $iconsOrange, $icons2xOrange);
 
   @include breakpoint ($bpTablet) {
     display: none;
@@ -392,7 +392,7 @@ div.messages {
   float: right;
   margin: 8px;
   text-indent: -9999px;
-  @include brilliance-sprite(login, $iconsOrange, $icons2xOrange);
+  //@include brilliance-sprite(login, $iconsOrange, $icons2xOrange);
 
   /*@include breakpoint ($bpTablet) {
     float: none;
